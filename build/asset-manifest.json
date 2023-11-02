@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2738539d.css",
+    "main.js": "/static/js/main.3de3eb4b.js",
+    "static/js/787.8449eb72.chunk.js": "/static/js/787.8449eb72.chunk.js",
+    "static/media/GropledBold.woff": "/static/media/GropledBold.fd19b5d0df6cd7bce4d0.woff",
+    "static/media/pattern-khanty.svg": "/static/media/pattern-khanty.ea18d2f5844a72b997379d1ba94f892c.svg",
+    "index.html": "/index.html",
+    "main.2738539d.css.map": "/static/css/main.2738539d.css.map",
+    "main.3de3eb4b.js.map": "/static/js/main.3de3eb4b.js.map",
+    "787.8449eb72.chunk.js.map": "/static/js/787.8449eb72.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2738539d.css",
+    "static/js/main.3de3eb4b.js"
+  ]
+}
