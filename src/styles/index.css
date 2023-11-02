@@ -73,7 +73,7 @@ a:hover, a:visited {
 
 p {
   margin-top: calc(var(--offset-base-size) * 4);
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Times New Roman';
   line-height: 1.45;
 }
@@ -84,7 +84,7 @@ p {
   margin-inline: auto;
   color: var(--clr-text);
   font-family: "Times New Roman";
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 145%; /* 36.25px */
