@@ -1,7 +1,7 @@
 {
   "name": "neurotales",
   "version": "0.1.0",
-  "homepage": "https://neft-media/github.io/neiroskazki",
+  "homepage": "https://neft-media.github.io/neiroskazki",
   "private": true,
   "dependencies": {
     "@mantine/core": "^7.2.1",
