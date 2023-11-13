@@ -41,8 +41,6 @@ function Khanty() {
     localStorage.setItem('khantTale1IsRus', tale1IsRus);
   }, [tale1IsRus]);
 
-
-
   let tale1 = tale_1_rus;
 
   if (!tale1IsRus) {
