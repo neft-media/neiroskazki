@@ -35,7 +35,9 @@ function Khanty() {
   const lang1 = "РУС";
   const lang2 = "ХАНТ";
 
-  const [tale1IsRus, tale1LangHandler] = useDisclosure(localStorage.getItem("khantTale1IsRus") === "true");
+  const [tale1IsRus, tale1LangHandler] = useDisclosure(
+    ("khantTale1IsRus" in localStorage) ? localStorage.getItem("khantTale1IsRus") === "true" : true
+  );
 
   React.useEffect(() => {
     localStorage.setItem('khantTale1IsRus', tale1IsRus);
@@ -99,7 +101,7 @@ function Khanty() {
 
         <div className={clsx("tale")}>
 
-          <motion.h2 {...animations} className={clsx(styles.clr_1, "mt-5")}>{tale1.title}</motion.h2>
+          <motion.h2 {...animations} className={clsx(!tale1IsRus && "foreign_title", styles.clr_1, "mt-5")}>{tale1.title}</motion.h2>
           <motion.p {...animations} className={clsx("mt-2")}>{tale1.content.p0}</motion.p>
 
           <motion.div {...animations}>
