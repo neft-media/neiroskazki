@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.2738539d.css",
-    "main.js": "/static/js/main.3de3eb4b.js",
+    "main.css": "/static/css/main.c322a27a.css",
+    "main.js": "/static/js/main.02029049.js",
     "static/js/787.8449eb72.chunk.js": "/static/js/787.8449eb72.chunk.js",
+    "static/media/khant_1_1_v.jpg": "/static/media/khant_1_1_v.2c24104c1a9e2efd9639.jpg",
+    "static/media/khant_1_1_h.jpg": "/static/media/khant_1_1_h.d55fb3b61a91264947a3.jpg",
+    "static/media/khant_1_2_h.jpg": "/static/media/khant_1_2_h.5167b1450a980cd2599e.jpg",
+    "static/media/khant_1_2_v.jpg": "/static/media/khant_1_2_v.631aaadcd52d2d41b005.jpg",
+    "static/media/khant_1_3_h.jpg": "/static/media/khant_1_3_h.0ea390e9596597d2fd25.jpg",
+    "static/media/khant_1_3_v.jpg": "/static/media/khant_1_3_v.13bdf0b732bc09bec28b.jpg",
     "static/media/GropledBold.woff": "/static/media/GropledBold.fd19b5d0df6cd7bce4d0.woff",
     "static/media/pattern-khanty.svg": "/static/media/pattern-khanty.ea18d2f5844a72b997379d1ba94f892c.svg",
     "index.html": "/index.html",
-    "main.2738539d.css.map": "/static/css/main.2738539d.css.map",
-    "main.3de3eb4b.js.map": "/static/js/main.3de3eb4b.js.map",
+    "main.c322a27a.css.map": "/static/css/main.c322a27a.css.map",
+    "main.02029049.js.map": "/static/js/main.02029049.js.map",
     "787.8449eb72.chunk.js.map": "/static/js/787.8449eb72.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2738539d.css",
-    "static/js/main.3de3eb4b.js"
+    "static/css/main.c322a27a.css",
+    "static/js/main.02029049.js"
   ]
 }
