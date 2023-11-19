@@ -4,6 +4,7 @@
   margin-inline: auto;
   display: flex;
   align-items: center;
+  padding-top: calc(var(--offset-base-size) * 6);
 }
 
 .lang {

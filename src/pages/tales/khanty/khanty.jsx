@@ -1,9 +1,11 @@
 import React from 'react';
+import { useEffect, useRef } from 'react';
+import { Link } from "react-router-dom";
 import clsx from 'clsx';
 
 import { useDisclosure } from '@mantine/hooks';
 
-import { Drawer} from '@mantine/core';
+import { Drawer, ScrollArea } from '@mantine/core';
 import { Burger } from '@mantine/core';
 
 import { motion } from "framer-motion"
@@ -13,7 +15,9 @@ import LangSelector from '../../../components/lang-selector/lang-selector';
 import styles from "./khanty.module.css";
 
 // Картинки
+import backIcon from '../../../images/to_left.svg';
 import patternKhanty from '../../../images/khanty/pattern-khanty.svg';
+import singlePatternKhanty from '../../../images/khanty/single-pattern-khanty.svg';
 import tale1Image1Hor from "../../../images/khanty/tale1/khant_1_1_h.jpg";
 import tale1Image1Vert from "../../../images/khanty/tale1/khant_1_1_v.jpg";
 import tale1Image2Hor from "../../../images/khanty/tale1/khant_1_2_h.jpg";
@@ -30,6 +34,21 @@ function Khanty() {
 
   const [menuOpened, menuHandlers] = useDisclosure(false);
 
+  // Переменные для скролла
+  const scrollRefs = {
+    firstTale: useRef(null),
+    secondTale: useRef(null),
+    thirdTale: useRef(null)
+  }
+  const handleScrollTo = (refKey) => {
+    const tale = scrollRefs[refKey].current;
+    if (tale) {
+      tale.scrollIntoView({ behavior: 'smooth' });
+      menuHandlers.close();
+    }
+
+  }
+
 
   // Селекторы языка
   const lang1 = "РУС";
@@ -39,7 +58,7 @@ function Khanty() {
     ("khantTale1IsRus" in localStorage) ? localStorage.getItem("khantTale1IsRus") === "true" : true
   );
 
-  React.useEffect(() => {
+  useEffect(() => {
     localStorage.setItem('khantTale1IsRus', tale1IsRus);
   }, [tale1IsRus]);
 
@@ -58,21 +77,71 @@ function Khanty() {
   }
 
   return (
-    <>
+    <div
+      className={clsx("wrapper")}
+      style={{
+        backgroundImage: `url(${singlePatternKhanty}), url(${singlePatternKhanty})`,
+      }}
+    >
+      {/* <img className="bg_pattern bg_pattern_1" src={singlePatternKhanty} />
+      <img className="bg_pattern bg_pattern_2" src={singlePatternKhanty} /> */}
+
       <div className={clsx("page")}>
 
-
-
         {/* Меню */}
-        <Burger className={clsx("burger-button")} opened={menuOpened} onClick={menuHandlers.toggle} aria-label="Toggle navigation" />
-        <Drawer
-          position="right"
+        <Burger
+          className={clsx("burger-button")}
           opened={menuOpened}
-          onClose={menuHandlers.toggle}
+          onClick={menuHandlers.toggle}
+          aria-label="Toggle navigation"
+          size="lg"
+          styles={{
+            root: {
+              backgroundColor: "rgba(255, 255, 255, 0.30)",
+              backdropFilter: "blur(5px)",
+              borderRadius: "5px"
+            }
+          }}
+        />
+
+        <Drawer.Root
+          position="right"
+          size="600"
+          opened={menuOpened}
+          lockScroll={true}
+          scrollAreaComponent={ScrollArea.Autosize}
           transitionProps={{ transition: 'slide-left', duration: 250, timingFunction: "ease" }}
+          styles={{
+            content: {
+              borderRadius: "40px 0 0 40px"
+            },
+            header: {
+              zIndex: "2000"
+            },
+            body: {
+              paddingTop: "0"
+            },
+          }}
         >
-          <p>Hello</p>
-        </Drawer>
+          <Drawer.Overlay />
+          <Drawer.Content>
+            <Drawer.Body>
+              <img className={clsx("menu_pattern", "menu_pattern_1")} src={singlePatternKhanty} />
+              <img className={clsx("menu_pattern", "menu_pattern_2")} src={singlePatternKhanty} />
+
+              <Link className={clsx("menu_back_item")} to="/">
+                <h4>Сказки других<br/>народов</h4>
+                <img className="back_icon" src={backIcon} />
+              </Link>
+
+              <ul className={clsx(!tale1IsRus && "foreign", "menu_items")}>
+                <li className={clsx(styles.clr_1)} onClick={() => handleScrollTo("firstTale")}>{tale1.title}</li>
+                <li className={clsx(styles.clr_2)} onClick={() => handleScrollTo("secondTale")}>{tale1.title}</li>
+                <li className={clsx(styles.clr_3)} onClick={() => handleScrollTo("thirdTale")}>{tale1.title}</li>
+              </ul>
+            </Drawer.Body>
+          </Drawer.Content>
+        </Drawer.Root>
 
 
 
@@ -95,13 +164,16 @@ function Khanty() {
 
         {/*-------------- Сказка 1 ----------------*/}
 
-        <motion.div {...animations}>
-          <LangSelector lang1={lang1} lang2={lang2} rus={tale1IsRus} toggleLang={tale1LangHandler.toggle}/>
-        </motion.div>
+        <section ref={scrollRefs.firstTale} className={clsx("tale")}>
+          <motion.div {...animations}>
+            <LangSelector lang1={lang1} lang2={lang2} rus={tale1IsRus} toggleLang={tale1LangHandler.toggle}/>
+          </motion.div>
 
-        <div className={clsx("tale")}>
 
-          <motion.h2 {...animations} className={clsx(!tale1IsRus && "foreign_title", styles.clr_1, "mt-5")}>{tale1.title}</motion.h2>
+          <motion.h2 {...animations} className={clsx(!tale1IsRus && "foreign", styles.clr_1, "mt-5")}>
+            {tale1.title}
+            <span className={clsx("tale_id")}>{tale1.id}</span>
+          </motion.h2>
           <motion.p {...animations} className={clsx("mt-2")}>{tale1.content.p0}</motion.p>
 
           <motion.div {...animations}>
@@ -176,13 +248,14 @@ function Khanty() {
             </picture>
           </motion.div>
 
-          <div className={clsx("pattern_wrapper")}>
-            <div style={{ backgroundImage: `url(${patternKhanty})` }} className={clsx("pattern")}></div>
-          </div>
+        </section>
 
+        <div className={clsx("pattern_wrapper")}>
+          <div style={{ backgroundImage: `url(${patternKhanty})` }} className={clsx("pattern")}></div>
         </div>
+
       </div>
-    </>
+    </div>
   );
 }
 

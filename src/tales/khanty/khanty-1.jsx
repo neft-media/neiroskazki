@@ -2,6 +2,7 @@ import React from "react";
 
 const tale_1_rus = {
   title: <>Как кот и&nbsp;белка жили</>,
+  id: "01",
   content: {
     p0:
     <>
