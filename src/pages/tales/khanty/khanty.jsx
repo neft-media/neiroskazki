@@ -5,7 +5,7 @@ import clsx from 'clsx';
 
 import { useDisclosure } from '@mantine/hooks';
 
-import { Drawer, ScrollArea } from '@mantine/core';
+import { Drawer } from '@mantine/core';
 import { Burger } from '@mantine/core';
 
 import { motion } from "framer-motion"
@@ -83,8 +83,6 @@ function Khanty() {
         backgroundImage: `url(${singlePatternKhanty}), url(${singlePatternKhanty})`,
       }}
     >
-      {/* <img className="bg_pattern bg_pattern_1" src={singlePatternKhanty} />
-      <img className="bg_pattern bg_pattern_2" src={singlePatternKhanty} /> */}
 
       <div className={clsx("page")}>
 
@@ -109,11 +107,10 @@ function Khanty() {
           size="600"
           opened={menuOpened}
           lockScroll={true}
-          scrollAreaComponent={ScrollArea.Autosize}
           transitionProps={{ transition: 'slide-left', duration: 250, timingFunction: "ease" }}
           styles={{
             content: {
-              borderRadius: "40px 0 0 40px"
+              backgroundImage: `url(${singlePatternKhanty}), url(${singlePatternKhanty})`
             },
             header: {
               zIndex: "2000"
@@ -124,14 +121,13 @@ function Khanty() {
           }}
         >
           <Drawer.Overlay />
-          <Drawer.Content>
+          <Drawer.Content className={clsx("menu_container")}>
             <Drawer.Body>
-              <img className={clsx("menu_pattern", "menu_pattern_1")} src={singlePatternKhanty} />
-              <img className={clsx("menu_pattern", "menu_pattern_2")} src={singlePatternKhanty} />
 
               <Link className={clsx("menu_back_item")} to="/">
-                <h4>Сказки других<br/>народов</h4>
-                <img className="back_icon" src={backIcon} />
+                {/* <h4>Сказки других<br/>народов</h4>
+                <img className="back_icon" src={backIcon} /> */}
+                <h4><img className="back_icon" src={backIcon} />Сказки других<br/>народов</h4>
               </Link>
 
               <ul className={clsx(!tale1IsRus && "foreign", "menu_items")}>
