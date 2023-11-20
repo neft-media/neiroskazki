@@ -1,0 +1,18 @@
+.highlightedText {
+  border-radius: 1em;
+  border: 1px dashed #000;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-inline: 0.5em;
+  cursor: pointer;
+}
+
+.term {
+  color: #FFCA0C;
+}
+
+.active {
+  background-color: #323648;
+  color: white;
+}
+

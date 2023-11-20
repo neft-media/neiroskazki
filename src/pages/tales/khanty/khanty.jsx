@@ -26,6 +26,7 @@ import tale1Image3Hor from "../../../images/khanty/tale1/khant_1_3_h.jpg";
 import tale1Image3Vert from "../../../images/khanty/tale1/khant_1_3_v.jpg";
 
 import { tale_1_rus, tale_1_khanty } from "../../../tales/khanty/khanty-1";
+import { tale_2_rus, tale_2_khanty } from "../../../tales/khanty/khanty-2";
 
 
 function Khanty() {
@@ -58,15 +59,29 @@ function Khanty() {
     ("khantTale1IsRus" in localStorage) ? localStorage.getItem("khantTale1IsRus") === "true" : true
   );
 
+  const [tale2IsRus, tale2LangHandler] = useDisclosure(
+    ("khantTale2IsRus" in localStorage) ? localStorage.getItem("khantTale2IsRus") === "true" : true
+  );
+
   useEffect(() => {
     localStorage.setItem('khantTale1IsRus', tale1IsRus);
   }, [tale1IsRus]);
 
+  useEffect(() => {
+    localStorage.setItem('khantTale2IsRus', tale2IsRus);
+  }, [tale2IsRus]);
+
   let tale1 = tale_1_rus;
+  let tale2 = tale_2_rus;
 
   if (!tale1IsRus) {
     tale1 = tale_1_khanty;
   }
+
+  if (!tale2IsRus) {
+    tale2 = tale_2_khanty;
+  }
+
 
   // Animations
   const animations = {
@@ -125,14 +140,12 @@ function Khanty() {
             <Drawer.Body>
 
               <Link className={clsx("menu_back_item")} to="/">
-                {/* <h4>Сказки других<br/>народов</h4>
-                <img className="back_icon" src={backIcon} /> */}
                 <h4><img className="back_icon" src={backIcon} />Сказки других<br/>народов</h4>
               </Link>
 
               <ul className={clsx(!tale1IsRus && "foreign", "menu_items")}>
                 <li className={clsx(styles.clr_1)} onClick={() => handleScrollTo("firstTale")}>{tale1.title}</li>
-                <li className={clsx(styles.clr_2)} onClick={() => handleScrollTo("secondTale")}>{tale1.title}</li>
+                <li className={clsx(styles.clr_2)} onClick={() => handleScrollTo("secondTale")}>{tale2.title}</li>
                 <li className={clsx(styles.clr_3)} onClick={() => handleScrollTo("thirdTale")}>{tale1.title}</li>
               </ul>
             </Drawer.Body>
@@ -249,6 +262,23 @@ function Khanty() {
         <div className={clsx("pattern_wrapper")}>
           <div style={{ backgroundImage: `url(${patternKhanty})` }} className={clsx("pattern")}></div>
         </div>
+
+        {/*-------------- Сказка 2 ----------------*/}
+        <section ref={scrollRefs.secondTale} className={clsx("tale")}>
+          <motion.div {...animations}>
+            <LangSelector lang1={lang1} lang2={lang2} rus={tale2IsRus} toggleLang={tale2LangHandler.toggle}/>
+          </motion.div>
+
+
+          <motion.h2 {...animations} className={clsx(!tale2IsRus && "foreign", styles.clr_2, "mt-5")}>
+            {tale2.title}
+            <span className={clsx("tale_id")}>{tale2.id}</span>
+          </motion.h2>
+          <motion.p {...animations} className={clsx("mt-2")}>{tale2.content.p0}</motion.p>
+
+
+
+        </section>
 
       </div>
     </div>
