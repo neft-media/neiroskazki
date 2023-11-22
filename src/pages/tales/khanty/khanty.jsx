@@ -18,12 +18,23 @@ import styles from "./khanty.module.css";
 import backIcon from '../../../images/to_left.svg';
 import patternKhanty from '../../../images/khanty/pattern-khanty.svg';
 import singlePatternKhanty from '../../../images/khanty/single-pattern-khanty.svg';
+
 import tale1Image1Hor from "../../../images/khanty/tale1/khant_1_1_h.jpg";
 import tale1Image1Vert from "../../../images/khanty/tale1/khant_1_1_v.jpg";
 import tale1Image2Hor from "../../../images/khanty/tale1/khant_1_2_h.jpg";
 import tale1Image2Vert from "../../../images/khanty/tale1/khant_1_2_v.jpg";
 import tale1Image3Hor from "../../../images/khanty/tale1/khant_1_3_h.jpg";
 import tale1Image3Vert from "../../../images/khanty/tale1/khant_1_3_v.jpg";
+
+import tale2Image1Hor from "../../../images/khanty/tale2/khant_2_1_h.jpg";
+import tale2Image1Vert from "../../../images/khanty/tale2/khant_2_1_v.jpg";
+import tale2Image2Hor from "../../../images/khanty/tale2/khant_2_2_h.jpg";
+import tale2Image2Vert from "../../../images/khanty/tale2/khant_2_2_v.jpg";
+import tale2Image3Hor from "../../../images/khanty/tale2/khant_2_3_h.jpg";
+import tale2Image3Vert from "../../../images/khanty/tale2/khant_2_3_v.jpg";
+
+
+
 
 import { tale_1_rus, tale_1_khanty } from "../../../tales/khanty/khanty-1";
 import { tale_2_rus, tale_2_khanty } from "../../../tales/khanty/khanty-2";
@@ -143,10 +154,10 @@ function Khanty() {
                 <h4><img className="back_icon" src={backIcon} />Сказки других<br/>народов</h4>
               </Link>
 
-              <ul className={clsx(!tale1IsRus && "foreign", "menu_items")}>
-                <li className={clsx(styles.clr_1)} onClick={() => handleScrollTo("firstTale")}>{tale1.title}</li>
-                <li className={clsx(styles.clr_2)} onClick={() => handleScrollTo("secondTale")}>{tale2.title}</li>
-                <li className={clsx(styles.clr_3)} onClick={() => handleScrollTo("thirdTale")}>{tale1.title}</li>
+              <ul className={clsx("menu_items")}>
+                <li className={clsx(!tale1IsRus && "foreign", styles.clr_1)} onClick={() => handleScrollTo("firstTale")}>{tale1.title}</li>
+                <li className={clsx(!tale2IsRus && "foreign", styles.clr_2)} onClick={() => handleScrollTo("secondTale")}>{tale2.title}</li>
+                <li className={clsx(!tale2IsRus && "foreign", styles.clr_3)} onClick={() => handleScrollTo("thirdTale")}>{tale1.title}</li>
               </ul>
             </Drawer.Body>
           </Drawer.Content>
@@ -276,9 +287,75 @@ function Khanty() {
           </motion.h2>
           <motion.p {...animations} className={clsx("mt-2")}>{tale2.content.p0}</motion.p>
 
+          <motion.p {...animations}>{tale2.content.p1}</motion.p>
 
+          <motion.div {...animations}>
+            <picture className="image">
+              <source
+                media={`(max-width: ${imageBreakpoint})`}
+                srcSet={`${tale2Image1Vert} 1000w`}
+              />
+              <source
+                media={`(min-width: ${imageBreakpoint})`}
+                srcSet={`${tale2Image1Hor} 1500w`}
+              />
+              <img src={tale2Image1Hor} alt="Люди бегут за оленем" />
+            </picture>
+          </motion.div>
+
+          <motion.p {...animations}>{tale2.content.p2}</motion.p>
+
+          <motion.p {...animations}>{tale2.content.p3}</motion.p>
+
+          <motion.p {...animations} className={clsx("big_text")}>{tale2.content.p4}</motion.p>
+
+          <motion.p {...animations}>{tale2.content.p5}</motion.p>
+
+          <motion.p {...animations}>{tale2.content.p6}</motion.p>
+
+          <motion.div {...animations}>
+            <picture className="image">
+              <source
+                media={`(max-width: ${imageBreakpoint})`}
+                srcSet={`${tale2Image2Vert} 1000w`}
+              />
+              <source
+                media={`(min-width: ${imageBreakpoint})`}
+                srcSet={`${tale2Image2Hor} 1500w`}
+              />
+              <img src={tale2Image2Hor} alt="Комары-монстры гоняют всех вокруг" />
+            </picture>
+          </motion.div>
+
+          <motion.p {...animations}>{tale2.content.p7}</motion.p>
+
+          <motion.p {...animations} className={clsx("big_text")}>{tale2.content.p8}</motion.p>
+
+          <motion.p {...animations}>{tale2.content.p9}</motion.p>
+
+          <motion.p {...animations}>{tale2.content.p10}</motion.p>
+
+          <motion.div {...animations}>
+            <picture className="image">
+              <source
+                media={`(max-width: ${imageBreakpoint})`}
+                srcSet={`${tale2Image3Vert} 1000w`}
+              />
+              <source
+                media={`(min-width: ${imageBreakpoint})`}
+                srcSet={`${tale2Image3Hor} 1500w`}
+              />
+              <img src={tale2Image3Hor} alt="Мир, любовь, люди, олени" />
+            </picture>
+          </motion.div>
+
+          <motion.p {...animations}>{tale2.content.p11}</motion.p>
 
         </section>
+
+        <div className={clsx("pattern_wrapper")}>
+          <div style={{ backgroundImage: `url(${patternKhanty})` }} className={clsx("pattern")}></div>
+        </div>
 
       </div>
     </div>

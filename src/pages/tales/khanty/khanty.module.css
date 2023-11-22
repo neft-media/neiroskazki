@@ -1,25 +1,25 @@
 .clr_1 {
-  background: linear-gradient(272deg, #FFC20E -19.82%, #C75F00 92.43%);
+  background: linear-gradient(135deg, #FFC20E, #C75F00 );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border-image: linear-gradient(272deg, #FFC20E -19.82%, #C75F00 92.43%) 2;
+  border-image: linear-gradient(135deg, #FFC20E, #C75F00) 2;
 }
 
 .clr_2 {
-  background: linear-gradient(270deg, #006FB9 -4.95%, #0E2B3F 123.67%);
+  background: linear-gradient(135deg, #006FB9, #0E2B3F);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border-image: linear-gradient(270deg, #006FB9 -4.95%, #0E2B3F 123.67%) 2;
+  border-image: linear-gradient(135deg, #006FB9, #0E2B3F) 2;
 }
 
 .clr_3 {
-  background: linear-gradient(259deg, #E65A5A -35.07%, #622B6C 142.22%);
+  background: linear-gradient(135deg, #E65A5A, #622B6C);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border-image: linear-gradient(259deg, #E65A5A -35.07%, #622B6C 142.22%) 2;
+  border-image: linear-gradient(135deg, #E65A5A, #622B6C) 2;
 }
 
 
