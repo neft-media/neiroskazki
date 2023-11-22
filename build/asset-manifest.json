@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/neiroskazki/static/css/main.b1cfc11f.css",
+    "main.css": "/neiroskazki/static/css/main.689bfdde.css",
     "main.js": "/neiroskazki/static/js/main.4e68a739.js",
     "static/js/787.8449eb72.chunk.js": "/neiroskazki/static/js/787.8449eb72.chunk.js",
     "static/media/khant_1_1_v.jpg": "/neiroskazki/static/media/khant_1_1_v.2c24104c1a9e2efd9639.jpg",
@@ -26,12 +26,12 @@
     "static/media/single-pattern-khanty.svg": "/neiroskazki/static/media/single-pattern-khanty.b4e6b9afddb9c3d43fcd7d0981ab45ae.svg",
     "index.html": "/neiroskazki/index.html",
     "static/media/to_left.svg": "/neiroskazki/static/media/to_left.7b27ef04f8460a302167e73d47287920.svg",
-    "main.b1cfc11f.css.map": "/neiroskazki/static/css/main.b1cfc11f.css.map",
+    "main.689bfdde.css.map": "/neiroskazki/static/css/main.689bfdde.css.map",
     "main.4e68a739.js.map": "/neiroskazki/static/js/main.4e68a739.js.map",
     "787.8449eb72.chunk.js.map": "/neiroskazki/static/js/787.8449eb72.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1cfc11f.css",
+    "static/css/main.689bfdde.css",
     "static/js/main.4e68a739.js"
   ]
 }
