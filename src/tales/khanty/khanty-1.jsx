@@ -41,7 +41,7 @@ const tale_1_rus = {
       Белка испугалась и&nbsp;говорит:<br/>
       &mdash;&nbsp;Я&nbsp;пойду, схожу к&nbsp;хозяину.<br/>
       &mdash;&nbsp;А&nbsp;кто твой хозяин?<br/>
-      &mdash;&nbsp;Мой хозяин - всем хозяевам хозяин.<br/>
+      &mdash;&nbsp;Мой хозяин &mdash; всем хозяевам хозяин.<br/>
       &mdash;&nbsp;А&nbsp;как его зовут?<br/>
       &mdash;&nbsp;Не&nbsp;скажу.<br/>
     </>,

@@ -4,6 +4,8 @@ import clsx from 'clsx';
 
 import { Tooltip } from '@mantine/core';
 
+import { useClickOutside } from '@mantine/hooks';
+
 import styles from "./custom-tooltip.module.css";
 
 const tooltipProps = {
@@ -31,6 +33,7 @@ const definitionStyles = {
 function CustomPopover({highlightedText, term, definition}) {
 
   const [opened, setOpened] = useState(false);
+  const ref = useClickOutside(() => setOpened(false));
 
   const definitionFull = <>
     {term && <span className={styles.term}>{term}</span>}{definition}
@@ -43,7 +46,13 @@ function CustomPopover({highlightedText, term, definition}) {
         tooltip: {...definitionStyles}
       }}
     >
-        <span className={clsx(styles.highlightedText, opened && styles.active)} onClick={() => setOpened((o) => !o)}>{highlightedText}</span>
+        <span
+          ref={ref}
+          className={clsx(styles.highlightedText, opened && styles.active)}
+          onClick={() => setOpened((o) => !o)}
+        >
+          {highlightedText}
+        </span>
     </Tooltip>
   );
 }

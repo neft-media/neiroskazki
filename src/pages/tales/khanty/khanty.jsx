@@ -123,13 +123,13 @@ function Khanty() {
   }
 
   return (
-    <div
-      className={clsx("wrapper")}
-      style={{
-        backgroundImage: `url(${singlePatternKhanty}), url(${singlePatternKhanty})`,
-      }}
-    >
-
+    <>
+      <div
+        className={clsx("bg-patterns")}
+        style={{
+          backgroundImage: `url(${singlePatternKhanty}), url(${singlePatternKhanty})`,
+        }}
+      ></div>
       <div className={clsx("page")}>
 
         {/* Меню */}
@@ -187,7 +187,7 @@ function Khanty() {
 
         {/* Заголовок и вводный абзац */}
 
-        <h1 className={clsx(styles.clr_1, "mt-5")}>Хантыйские сказки</h1>
+        <h1 className={clsx(styles.clr_1, "mt-12")}>Хантыйские сказки</h1>
         <p className={clsx("intro_text", "mt-4")}>
         Название Ханты-Мансийского автономного округа составлено из&nbsp;названий двух коренных народов
         этих мест&nbsp;&mdash; ханты и&nbsp;манси. Поэтому мы&nbsp;начинаем проект &laquo;Нейросказки&raquo;
@@ -457,7 +457,7 @@ function Khanty() {
         </div>
 
       </div>
-    </div>
+    </>
   );
 }
 

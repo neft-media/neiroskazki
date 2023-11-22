@@ -13,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 :root {
@@ -28,17 +29,20 @@ body {
   background-color: var(--clr-bkg);
 }
 
-.wrapper {
+.bg-patterns {
+  width: 100vw;
+  height: 100lvh;
+  position: fixed;
+  z-index: -1;
   background-size: 270px, 330px;
   background-repeat: no-repeat;
   background-position: left -5% top 10%, right -5% bottom 10%;
-  background-attachment:fixed;
 }
 
 @media screen and (max-width: 700px) {
-  .wrapper {
+  .bg-patterns {
     background-size: 150px, 200px;
-    background-position: left -30% top 10%, right -25% bottom 10%;
+    background-position: left -5% top 10%, right -25% bottom 15%;
   }
 }
 

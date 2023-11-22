@@ -18,6 +18,10 @@
   margin-top: calc(var(--offset-base-size) * 8);
 }
 
+.mt-12 {
+  margin-top: calc(var(--offset-base-size) * 12);
+}
+
 .mb-12 {
   margin-bottom: calc(var(--offset-base-size) * 12);
 }
