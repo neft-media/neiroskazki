@@ -105,6 +105,7 @@ const tale_1_rus = {
 
 const tale_1_khanty = {
   title: "Хуты ԓаӈки кămи пиԓа вөсӈән",
+  id: "01",
   content: {
     p0:
     <>

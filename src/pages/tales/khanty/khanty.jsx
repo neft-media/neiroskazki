@@ -33,11 +33,18 @@ import tale2Image2Vert from "../../../images/khanty/tale2/khant_2_2_v.jpg";
 import tale2Image3Hor from "../../../images/khanty/tale2/khant_2_3_h.jpg";
 import tale2Image3Vert from "../../../images/khanty/tale2/khant_2_3_v.jpg";
 
+import tale3Image1Hor from "../../../images/khanty/tale3/khant_3_1_h.jpg";
+import tale3Image1Vert from "../../../images/khanty/tale3/khant_3_1_v.jpg";
+import tale3Image2Hor from "../../../images/khanty/tale3/khant_3_2_h.jpg";
+import tale3Image2Vert from "../../../images/khanty/tale3/khant_3_2_v.jpg";
+import tale3Image3Hor from "../../../images/khanty/tale3/khant_3_3_h.jpg";
+import tale3Image3Vert from "../../../images/khanty/tale3/khant_3_3_v.jpg";
 
 
 
 import { tale_1_rus, tale_1_khanty } from "../../../tales/khanty/khanty-1";
 import { tale_2_rus, tale_2_khanty } from "../../../tales/khanty/khanty-2";
+import { tale_3_rus, tale_3_khanty } from "../../../tales/khanty/khanty-3";
 
 
 function Khanty() {
@@ -74,6 +81,10 @@ function Khanty() {
     ("khantTale2IsRus" in localStorage) ? localStorage.getItem("khantTale2IsRus") === "true" : true
   );
 
+  const [tale3IsRus, tale3LangHandler] = useDisclosure(
+    ("khantTale3IsRus" in localStorage) ? localStorage.getItem("khantTale3IsRus") === "true" : true
+  );
+
   useEffect(() => {
     localStorage.setItem('khantTale1IsRus', tale1IsRus);
   }, [tale1IsRus]);
@@ -82,8 +93,13 @@ function Khanty() {
     localStorage.setItem('khantTale2IsRus', tale2IsRus);
   }, [tale2IsRus]);
 
+  useEffect(() => {
+    localStorage.setItem('khantTale3IsRus', tale3IsRus);
+  }, [tale3IsRus]);
+
   let tale1 = tale_1_rus;
   let tale2 = tale_2_rus;
+  let tale3 = tale_3_rus;
 
   if (!tale1IsRus) {
     tale1 = tale_1_khanty;
@@ -91,6 +107,10 @@ function Khanty() {
 
   if (!tale2IsRus) {
     tale2 = tale_2_khanty;
+  }
+
+  if (!tale3IsRus) {
+    tale3 = tale_3_khanty;
   }
 
 
@@ -157,7 +177,7 @@ function Khanty() {
               <ul className={clsx("menu_items")}>
                 <li className={clsx(!tale1IsRus && "foreign", styles.clr_1)} onClick={() => handleScrollTo("firstTale")}>{tale1.title}</li>
                 <li className={clsx(!tale2IsRus && "foreign", styles.clr_2)} onClick={() => handleScrollTo("secondTale")}>{tale2.title}</li>
-                <li className={clsx(!tale2IsRus && "foreign", styles.clr_3)} onClick={() => handleScrollTo("thirdTale")}>{tale1.title}</li>
+                <li className={clsx(!tale3IsRus && "foreign", styles.clr_3)} onClick={() => handleScrollTo("thirdTale")}>{tale3.title}</li>
               </ul>
             </Drawer.Body>
           </Drawer.Content>
@@ -354,6 +374,85 @@ function Khanty() {
         </section>
 
         <div className={clsx("pattern_wrapper")}>
+          <div style={{ backgroundImage: `url(${patternKhanty})` }} className={clsx("pattern")}></div>
+        </div>
+
+        {/*-------------- Сказка 3 ----------------*/}
+        <section ref={scrollRefs.thirdTale} className={clsx("tale")}>
+          <motion.div {...animations}>
+            <LangSelector lang1={lang1} lang2={lang2} rus={tale3IsRus} toggleLang={tale3LangHandler.toggle}/>
+          </motion.div>
+
+
+          <motion.h2 {...animations} className={clsx(!tale3IsRus && "foreign", styles.clr_3, "mt-5")}>
+            {tale3.title}
+            <span className={clsx("tale_id")}>{tale3.id}</span>
+          </motion.h2>
+          <motion.p {...animations} className={clsx("mt-2")}>{tale3.content.p0}</motion.p>
+
+          <motion.p {...animations}>{tale3.content.p1}</motion.p>
+
+          <motion.div {...animations}>
+            <picture className="image">
+              <source
+                media={`(max-width: ${imageBreakpoint})`}
+                srcSet={`${tale3Image1Vert} 1000w`}
+              />
+              <source
+                media={`(min-width: ${imageBreakpoint})`}
+                srcSet={`${tale3Image1Hor} 1500w`}
+              />
+              <img src={tale3Image1Hor} alt="Мышка и воробей делают амбар" />
+            </picture>
+          </motion.div>
+
+          <motion.p {...animations}>{tale3.content.p2}</motion.p>
+
+          <motion.p {...animations}>{tale3.content.p3}</motion.p>
+
+          <motion.p {...animations} className={clsx("big_text")}>{tale3.content.p4}</motion.p>
+
+          <motion.p {...animations}>{tale3.content.p5}</motion.p>
+
+          <motion.div {...animations}>
+            <picture className="image">
+              <source
+                media={`(max-width: ${imageBreakpoint})`}
+                srcSet={`${tale3Image2Vert} 1000w`}
+              />
+              <source
+                media={`(min-width: ${imageBreakpoint})`}
+                srcSet={`${tale3Image2Hor} 1500w`}
+              />
+              <img src={tale3Image2Hor} alt="Мышка выгоняет воробья" />
+            </picture>
+          </motion.div>
+
+          <motion.p {...animations}>{tale3.content.p6}</motion.p>
+
+          <motion.p {...animations} className={clsx("big_text")}>{tale3.content.p7}</motion.p>
+
+          <motion.p {...animations}>{tale3.content.p8}</motion.p>
+
+          <motion.p {...animations}>{tale3.content.p9}</motion.p>
+
+          <motion.div {...animations}>
+            <picture className="image">
+              <source
+                media={`(max-width: ${imageBreakpoint})`}
+                srcSet={`${tale3Image3Vert} 1000w`}
+              />
+              <source
+                media={`(min-width: ${imageBreakpoint})`}
+                srcSet={`${tale3Image3Hor} 1500w`}
+              />
+              <img src={tale3Image3Hor} alt="Суровая сова" />
+            </picture>
+          </motion.div>
+
+        </section>
+
+        <div className={clsx("pattern_wrapper", "mb-12")}>
           <div style={{ backgroundImage: `url(${patternKhanty})` }} className={clsx("pattern")}></div>
         </div>
 
