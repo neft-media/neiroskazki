@@ -8,6 +8,9 @@ function Homepage() {
               <Link to="/">Home</Link>
             </li>
             <li>
+              <Link to="/tales/mansi">Mansi</Link>
+            </li>
+            <li>
               <Link to="/tales/khanty">Khanty</Link>
             </li>
           </ul>
