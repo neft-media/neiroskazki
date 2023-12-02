@@ -1,5 +1,3 @@
-import CustomTooltip from "../../components/custom-tooltip/custom-tooltip"
-
 const tale_3_rus = {
   title: <>Почему совы на&nbsp;мышей охотятся</>,
   id: "03",

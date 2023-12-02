@@ -135,7 +135,6 @@ function Khanty() {
         }}
       ></div>
       <div className={clsx("page")}>
-
         {/* Меню */}
         <Burger
           className={clsx("burger-button")}
@@ -147,8 +146,8 @@ function Khanty() {
             root: {
               backgroundColor: "rgba(255, 255, 255, 0.30)",
               backdropFilter: "blur(5px)",
-              borderRadius: "5px"
-            }
+              borderRadius: "5px",
+            },
           }}
         />
 
@@ -157,68 +156,101 @@ function Khanty() {
           size="600"
           opened={menuOpened}
           lockScroll={true}
-          transitionProps={{ transition: 'slide-left', duration: 250, timingFunction: "ease" }}
+          transitionProps={{
+            transition: "slide-left",
+            duration: 250,
+            timingFunction: "ease",
+          }}
           styles={{
             content: {
-              backgroundImage: `url(${singlePatternKhanty}), url(${singlePatternKhanty})`
+              backgroundImage: `url(${singlePatternKhanty}), url(${singlePatternKhanty})`,
             },
             header: {
-              zIndex: "2000"
+              zIndex: "2000",
             },
             body: {
-              paddingTop: "0"
+              paddingTop: "0",
             },
           }}
         >
           <Drawer.Overlay />
           <Drawer.Content className={clsx("menu_container")}>
             <Drawer.Body>
-
               <Link className={clsx("menu_back_item")} to="/">
-                <h4><img className="back_icon" src={backIcon} />Сказки других<br/>народов</h4>
+                <h4>
+                  <img className="back_icon" src={backIcon} alt="back" />
+                  Сказки других
+                  <br />
+                  народов
+                </h4>
               </Link>
 
               <ul className={clsx("menu_items")}>
-                <li className={clsx(!tale1IsRus && "foreign", styles.clr_1)} onClick={() => handleScrollTo("firstTale")}>{tale1.title}</li>
-                <li className={clsx(!tale2IsRus && "foreign", styles.clr_2)} onClick={() => handleScrollTo("secondTale")}>{tale2.title}</li>
-                <li className={clsx(!tale3IsRus && "foreign", styles.clr_3)} onClick={() => handleScrollTo("thirdTale")}>{tale3.title}</li>
+                <li
+                  className={clsx(!tale1IsRus && "foreign", styles.clr_1)}
+                  onClick={() => handleScrollTo("firstTale")}
+                >
+                  {tale1.title}
+                </li>
+                <li
+                  className={clsx(!tale2IsRus && "foreign", styles.clr_2)}
+                  onClick={() => handleScrollTo("secondTale")}
+                >
+                  {tale2.title}
+                </li>
+                <li
+                  className={clsx(!tale3IsRus && "foreign", styles.clr_3)}
+                  onClick={() => handleScrollTo("thirdTale")}
+                >
+                  {tale3.title}
+                </li>
               </ul>
             </Drawer.Body>
           </Drawer.Content>
         </Drawer.Root>
 
-
-
         {/* Заголовок и вводный абзац */}
 
         <h1 className={clsx(styles.clr_1, "mt-12")}>Хантыйские сказки</h1>
         <p className={clsx("intro_text", "mt-4")}>
-        Название Ханты-Мансийского автономного округа составлено из&nbsp;названий двух коренных народов
-        этих мест&nbsp;&mdash; ханты и&nbsp;манси. Поэтому мы&nbsp;начинаем проект &laquo;Нейросказки&raquo;
-        именно с&nbsp;хантыйского фольклора. Представленные здесь
-        сказки <a href="https://clck.ru/36Ks8p">собрали и&nbsp;перевели</a> сотрудники Обско-Угорского института
-        прикладных исследований и&nbsp;разработок.
+          Название Ханты-Мансийского автономного округа составлено
+          из&nbsp;названий двух коренных народов этих мест&nbsp;&mdash; ханты
+          и&nbsp;манси. Поэтому нельзя было обойти вниманием и&nbsp;хантыйские
+          сказки. Представленные здесь произведения{" "}
+          <a href="https://clck.ru/36Ks8p">собрали и&nbsp;перевели</a>{" "}
+          сотрудники Обско-Угорского института прикладных исследований
+          и&nbsp;разработок.
         </p>
 
         <div className={clsx("pattern_wrapper")}>
-          <div style={{ backgroundImage: `url(${patternKhanty1})` }} className={clsx("pattern")}></div>
+          <div
+            style={{ backgroundImage: `url(${patternKhanty1})` }}
+            className={clsx("pattern")}
+          ></div>
         </div>
-
-
 
         {/*-------------- Сказка 1 ----------------*/}
 
         <section ref={scrollRefs.firstTale} className={clsx("tale")}>
           <motion.div {...animations}>
-            <LangSelector lang1={lang1} lang2={lang2} rus={tale1IsRus} toggleLang={tale1LangHandler.toggle}/>
+            <LangSelector
+              lang1={lang1}
+              lang2={lang2}
+              rus={tale1IsRus}
+              toggleLang={tale1LangHandler.toggle}
+            />
           </motion.div>
 
-
-          <motion.h2 {...animations} className={clsx(!tale1IsRus && "foreign", styles.clr_1, "mt-5")}>
+          <motion.h2
+            {...animations}
+            className={clsx(!tale1IsRus && "foreign", styles.clr_1, "mt-5")}
+          >
             {tale1.title}
             <span className={clsx("tale_id")}>{tale1.id}</span>
           </motion.h2>
-          <motion.p {...animations} className={clsx("mt-2")}>{tale1.content.p0}</motion.p>
+          <motion.p {...animations} className={clsx("mt-2")}>
+            {tale1.content.p0}
+          </motion.p>
 
           <motion.div {...animations}>
             <picture className="image">
@@ -240,7 +272,9 @@ function Khanty() {
 
           <motion.p {...animations}>{tale1.content.p3}</motion.p>
 
-          <motion.p {...animations} className={clsx("big_text")}>{tale1.content.p4}</motion.p>
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale1.content.p4}
+          </motion.p>
 
           <motion.p {...animations}>{tale1.content.p5}</motion.p>
 
@@ -270,7 +304,9 @@ function Khanty() {
 
           <motion.p {...animations}>{tale1.content.p11}</motion.p>
 
-          <motion.p {...animations} className={clsx("big_text")}>{tale1.content.p12}</motion.p>
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale1.content.p12}
+          </motion.p>
 
           <motion.p {...animations}>{tale1.content.p13}</motion.p>
 
@@ -288,28 +324,42 @@ function Khanty() {
                 media={`(min-width: ${imageBreakpoint})`}
                 srcSet={`${tale1Image3Hor} 1500w`}
               />
-              <img src={tale1Image3Hor} alt="Картинка с пирующими белкой и котом" />
+              <img
+                src={tale1Image3Hor}
+                alt="Картинка с пирующими белкой и котом"
+              />
             </picture>
           </motion.div>
-
         </section>
 
         <div className={clsx("pattern_wrapper")}>
-          <div style={{ backgroundImage: `url(${patternKhanty1})` }} className={clsx("pattern")}></div>
+          <div
+            style={{ backgroundImage: `url(${patternKhanty1})` }}
+            className={clsx("pattern")}
+          ></div>
         </div>
 
         {/*-------------- Сказка 2 ----------------*/}
         <section ref={scrollRefs.secondTale} className={clsx("tale")}>
           <motion.div {...animations}>
-            <LangSelector lang1={lang1} lang2={lang2} rus={tale2IsRus} toggleLang={tale2LangHandler.toggle}/>
+            <LangSelector
+              lang1={lang1}
+              lang2={lang2}
+              rus={tale2IsRus}
+              toggleLang={tale2LangHandler.toggle}
+            />
           </motion.div>
 
-
-          <motion.h2 {...animations} className={clsx(!tale2IsRus && "foreign", styles.clr_2, "mt-5")}>
+          <motion.h2
+            {...animations}
+            className={clsx(!tale2IsRus && "foreign", styles.clr_2, "mt-5")}
+          >
             {tale2.title}
             <span className={clsx("tale_id")}>{tale2.id}</span>
           </motion.h2>
-          <motion.p {...animations} className={clsx("mt-2")}>{tale2.content.p0}</motion.p>
+          <motion.p {...animations} className={clsx("mt-2")}>
+            {tale2.content.p0}
+          </motion.p>
 
           <motion.p {...animations}>{tale2.content.p1}</motion.p>
 
@@ -331,7 +381,9 @@ function Khanty() {
 
           <motion.p {...animations}>{tale2.content.p3}</motion.p>
 
-          <motion.p {...animations} className={clsx("big_text")}>{tale2.content.p4}</motion.p>
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale2.content.p4}
+          </motion.p>
 
           <motion.p {...animations}>{tale2.content.p5}</motion.p>
 
@@ -347,13 +399,18 @@ function Khanty() {
                 media={`(min-width: ${imageBreakpoint})`}
                 srcSet={`${tale2Image2Hor} 1500w`}
               />
-              <img src={tale2Image2Hor} alt="Комары-монстры гоняют всех вокруг" />
+              <img
+                src={tale2Image2Hor}
+                alt="Комары-монстры гоняют всех вокруг"
+              />
             </picture>
           </motion.div>
 
           <motion.p {...animations}>{tale2.content.p7}</motion.p>
 
-          <motion.p {...animations} className={clsx("big_text")}>{tale2.content.p8}</motion.p>
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale2.content.p8}
+          </motion.p>
 
           <motion.p {...animations}>{tale2.content.p9}</motion.p>
 
@@ -374,25 +431,36 @@ function Khanty() {
           </motion.div>
 
           <motion.p {...animations}>{tale2.content.p11}</motion.p>
-
         </section>
 
         <div className={clsx("pattern_wrapper")}>
-          <div style={{ backgroundImage: `url(${patternKhanty2})` }} className={clsx("pattern")}></div>
+          <div
+            style={{ backgroundImage: `url(${patternKhanty2})` }}
+            className={clsx("pattern")}
+          ></div>
         </div>
 
         {/*-------------- Сказка 3 ----------------*/}
         <section ref={scrollRefs.thirdTale} className={clsx("tale")}>
           <motion.div {...animations}>
-            <LangSelector lang1={lang1} lang2={lang2} rus={tale3IsRus} toggleLang={tale3LangHandler.toggle}/>
+            <LangSelector
+              lang1={lang1}
+              lang2={lang2}
+              rus={tale3IsRus}
+              toggleLang={tale3LangHandler.toggle}
+            />
           </motion.div>
 
-
-          <motion.h2 {...animations} className={clsx(!tale3IsRus && "foreign", styles.clr_3, "mt-5")}>
+          <motion.h2
+            {...animations}
+            className={clsx(!tale3IsRus && "foreign", styles.clr_3, "mt-5")}
+          >
             {tale3.title}
             <span className={clsx("tale_id")}>{tale3.id}</span>
           </motion.h2>
-          <motion.p {...animations} className={clsx("mt-2")}>{tale3.content.p0}</motion.p>
+          <motion.p {...animations} className={clsx("mt-2")}>
+            {tale3.content.p0}
+          </motion.p>
 
           <motion.p {...animations}>{tale3.content.p1}</motion.p>
 
@@ -414,7 +482,9 @@ function Khanty() {
 
           <motion.p {...animations}>{tale3.content.p3}</motion.p>
 
-          <motion.p {...animations} className={clsx("big_text")}>{tale3.content.p4}</motion.p>
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale3.content.p4}
+          </motion.p>
 
           <motion.p {...animations}>{tale3.content.p5}</motion.p>
 
@@ -434,7 +504,9 @@ function Khanty() {
 
           <motion.p {...animations}>{tale3.content.p6}</motion.p>
 
-          <motion.p {...animations} className={clsx("big_text")}>{tale3.content.p7}</motion.p>
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale3.content.p7}
+          </motion.p>
 
           <motion.p {...animations}>{tale3.content.p8}</motion.p>
 
@@ -453,17 +525,18 @@ function Khanty() {
               <img src={tale3Image3Hor} alt="Суровая сова" />
             </picture>
           </motion.div>
-
         </section>
 
         <ToMainPageButton />
 
         <div className={clsx("pattern_wrapper")}>
-          <div style={{ backgroundImage: `url(${patternKhanty3})` }} className={clsx("pattern")}></div>
+          <div
+            style={{ backgroundImage: `url(${patternKhanty3})` }}
+            className={clsx("pattern")}
+          ></div>
         </div>
 
         <div className={clsx("footer-spacer")}></div>
-
       </div>
     </>
   );
