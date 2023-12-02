@@ -11,12 +11,16 @@ import { Burger } from '@mantine/core';
 import { motion } from "framer-motion"
 
 import LangSelector from '../../../components/lang-selector/lang-selector';
+import ToMainPageButton from '../../../to-main-page-button/to-main-page-button';
 
 import styles from "./khanty.module.css";
 
 // Картинки
 import backIcon from '../../../images/to_left.svg';
-import patternKhanty from '../../../images/khanty/pattern-khanty.svg';
+import patternKhanty1 from '../../../images/khanty/pattern-khanty-1.svg';
+import patternKhanty2 from '../../../images/khanty/pattern-khanty-2.svg';
+import patternKhanty3 from '../../../images/khanty/pattern-khanty-3.svg';
+
 import singlePatternKhanty from '../../../images/khanty/single-pattern-khanty.svg';
 
 import tale1Image1Hor from "../../../images/khanty/tale1/khant_1_1_h.jpg";
@@ -197,7 +201,7 @@ function Khanty() {
         </p>
 
         <div className={clsx("pattern_wrapper")}>
-          <div style={{ backgroundImage: `url(${patternKhanty})` }} className={clsx("pattern")}></div>
+          <div style={{ backgroundImage: `url(${patternKhanty1})` }} className={clsx("pattern")}></div>
         </div>
 
 
@@ -291,7 +295,7 @@ function Khanty() {
         </section>
 
         <div className={clsx("pattern_wrapper")}>
-          <div style={{ backgroundImage: `url(${patternKhanty})` }} className={clsx("pattern")}></div>
+          <div style={{ backgroundImage: `url(${patternKhanty1})` }} className={clsx("pattern")}></div>
         </div>
 
         {/*-------------- Сказка 2 ----------------*/}
@@ -374,7 +378,7 @@ function Khanty() {
         </section>
 
         <div className={clsx("pattern_wrapper")}>
-          <div style={{ backgroundImage: `url(${patternKhanty})` }} className={clsx("pattern")}></div>
+          <div style={{ backgroundImage: `url(${patternKhanty2})` }} className={clsx("pattern")}></div>
         </div>
 
         {/*-------------- Сказка 3 ----------------*/}
@@ -452,9 +456,13 @@ function Khanty() {
 
         </section>
 
-        <div className={clsx("pattern_wrapper", "mb-12")}>
-          <div style={{ backgroundImage: `url(${patternKhanty})` }} className={clsx("pattern")}></div>
+        <ToMainPageButton />
+
+        <div className={clsx("pattern_wrapper")}>
+          <div style={{ backgroundImage: `url(${patternKhanty3})` }} className={clsx("pattern")}></div>
         </div>
+
+        <div className={clsx("footer-spacer")}></div>
 
       </div>
     </>

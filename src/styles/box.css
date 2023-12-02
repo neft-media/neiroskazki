@@ -1,3 +1,7 @@
+.mt-0 {
+  margin-top: 0;
+}
+
 .mt-2 {
   margin-top: calc(var(--offset-base-size) * 2);
 }

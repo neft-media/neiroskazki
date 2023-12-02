@@ -230,3 +230,7 @@ p {
   width: 100%;
   border-radius: 20px;
 }
+
+.footer-spacer {
+  height: calc(var(--offset-base-size) * 12);
+}
