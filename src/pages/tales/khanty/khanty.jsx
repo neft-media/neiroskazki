@@ -11,7 +11,7 @@ import { Burger } from '@mantine/core';
 import { motion } from "framer-motion"
 
 import LangSelector from '../../../components/lang-selector/lang-selector';
-import ToMainPageButton from '../../../to-main-page-button/to-main-page-button';
+import ToMainPageButton from '../../../components/to-main-page-button/to-main-page-button';
 
 import styles from "./khanty.module.css";
 

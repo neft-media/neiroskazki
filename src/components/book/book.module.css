@@ -1,0 +1,54 @@
+.link {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 330px;
+  aspect-ratio: 200 / 250;
+  border-radius: 2% 8% 8% 2%;
+  overflow: hidden;
+}
+
+.cover {
+  position: absolute;
+  display: block;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  width: 100%;
+  opacity: 30%;
+}
+
+.book {
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+
+.root {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  width: 3%;
+}
+
+.face {
+  width: 100%;
+  padding: 10%;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shape {
+  display: block;
+  max-width: 60%;
+}
+
+.title {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}

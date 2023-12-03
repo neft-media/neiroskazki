@@ -30,6 +30,9 @@
   margin-bottom: calc(var(--offset-base-size) * 12);
 }
 
+.ml-12 {
+  margin-left: calc(var(--offset-base-size) * 12);
+}
 
 .p-1 {
   padding: var(--offset-base-size);
