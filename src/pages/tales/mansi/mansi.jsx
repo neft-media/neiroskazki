@@ -140,7 +140,7 @@ function Mansi() {
       ></div>
       <div className={clsx("page")}>
         {/* Меню */}
-        {/* <Burger
+        <Burger
           className={clsx("burger-button")}
           opened={menuOpened}
           onClick={menuHandlers.toggle}
@@ -153,7 +153,7 @@ function Mansi() {
               borderRadius: "5px",
             },
           }}
-        /> */}
+        />
 
         <Drawer.Root
           position="right"
@@ -566,7 +566,7 @@ function Mansi() {
 
         </section>
 
-        {/* <ToMainPageButton /> */}
+        <ToMainPageButton />
 
         <div className={clsx("pattern_wrapper")}>
           <div

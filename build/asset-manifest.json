@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/neiroskazki/static/css/main.f9612f5f.css",
-    "main.js": "/neiroskazki/static/js/main.38519b38.js",
+    "main.css": "/neiroskazki/static/css/main.2f5717b3.css",
+    "main.js": "/neiroskazki/static/js/main.7f1843ee.js",
     "static/js/787.8449eb72.chunk.js": "/neiroskazki/static/js/787.8449eb72.chunk.js",
     "static/media/rus_2_2_v.jpg": "/neiroskazki/static/media/rus_2_2_v.88e4f127fdfd20bfb00c.jpg",
     "static/media/khant_1_1_v.jpg": "/neiroskazki/static/media/khant_1_1_v.2c24104c1a9e2efd9639.jpg",
@@ -53,10 +53,14 @@
     "static/media/rus_3_2_h.jpg": "/neiroskazki/static/media/rus_3_2_h.11c2e17a0236a64dab85.jpg",
     "static/media/mansi_1_3_h.jpg": "/neiroskazki/static/media/mansi_1_3_h.f1cfdc927401a058bd6a.jpg",
     "static/media/mansi_1_3_v.jpg": "/neiroskazki/static/media/mansi_1_3_v.5012e29c774299fa207a.jpg",
+    "static/media/rus-cover.jpg": "/neiroskazki/static/media/rus-cover.9183a0d908f353bd5286.jpg",
+    "static/media/khanty-cover.jpg": "/neiroskazki/static/media/khanty-cover.35ec95a3fbc034848c2c.jpg",
     "static/media/single-pattern-rus-1.svg": "/neiroskazki/static/media/single-pattern-rus-1.ce2bcfd3c61642d549b5ed2345f142e9.svg",
     "static/media/pattern-rus-3.svg": "/neiroskazki/static/media/pattern-rus-3.171c761deeef1077105758eb606a4c16.svg",
+    "static/media/mansi-cover.jpg": "/neiroskazki/static/media/mansi-cover.01705f1ab680f2d34ee1.jpg",
     "static/media/GropledBold.woff": "/neiroskazki/static/media/GropledBold.fd19b5d0df6cd7bce4d0.woff",
     "static/media/single-pattern-rus-2.svg": "/neiroskazki/static/media/single-pattern-rus-2.deec785a204969d954b07623b192fc35.svg",
+    "static/media/rus-shape.svg": "/neiroskazki/static/media/rus-shape.f7244fbfee75cdd2a1a0fe305b65e6bd.svg",
     "static/media/pattern-rus-1.svg": "/neiroskazki/static/media/pattern-rus-1.f2a6569b586e9fdb36a8e7a7ec60b499.svg",
     "static/media/pattern-khanty-1.svg": "/neiroskazki/static/media/pattern-khanty-1.ea18d2f5844a72b997379d1ba94f892c.svg",
     "static/media/single-pattern-mansi-2.svg": "/neiroskazki/static/media/single-pattern-mansi-2.a12d28d7d2d9154d327c3705e9ab79ef.svg",
@@ -65,19 +69,21 @@
     "static/media/single-pattern-mansi-1.svg": "/neiroskazki/static/media/single-pattern-mansi-1.8e1a663026e5c337dc5fa9e30db7aa67.svg",
     "static/media/pattern-mansi-3.svg": "/neiroskazki/static/media/pattern-mansi-3.9fdd987ddceca206d255b726732be53a.svg",
     "static/media/single-pattern-khanty.svg": "/neiroskazki/static/media/single-pattern-khanty.b4e6b9afddb9c3d43fcd7d0981ab45ae.svg",
+    "static/media/khanty-shape.svg": "/neiroskazki/static/media/khanty-shape.3ccbc57ac633937eb2e05fba4f834ee2.svg",
     "static/media/pattern-mansi-1.svg": "/neiroskazki/static/media/pattern-mansi-1.513adb81517a83753c024a5c67131e3d.svg",
+    "static/media/mansi-shape.svg": "/neiroskazki/static/media/mansi-shape.d86dd6161da469023eeb132f6435ad74.svg",
     "static/media/pattern-rus-4.svg": "/neiroskazki/static/media/pattern-rus-4.9514de5fb212b7f1a9ca3b256a32adc5.svg",
     "static/media/pattern-khanty-3.svg": "/neiroskazki/static/media/pattern-khanty-3.15524bb2ae176338a575abc9a3e65be2.svg",
     "static/media/pattern-khanty-2.svg": "/neiroskazki/static/media/pattern-khanty-2.31a43d739d90f74997183e2ee3dd8a37.svg",
     "index.html": "/neiroskazki/index.html",
     "static/media/pattern-rus-2.svg": "/neiroskazki/static/media/pattern-rus-2.0abaa34c455ad3c9f2cdbc83d8e403f2.svg",
     "static/media/to_left.svg": "/neiroskazki/static/media/to_left.7b27ef04f8460a302167e73d47287920.svg",
-    "main.f9612f5f.css.map": "/neiroskazki/static/css/main.f9612f5f.css.map",
-    "main.38519b38.js.map": "/neiroskazki/static/js/main.38519b38.js.map",
+    "main.2f5717b3.css.map": "/neiroskazki/static/css/main.2f5717b3.css.map",
+    "main.7f1843ee.js.map": "/neiroskazki/static/js/main.7f1843ee.js.map",
     "787.8449eb72.chunk.js.map": "/neiroskazki/static/js/787.8449eb72.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9612f5f.css",
-    "static/js/main.38519b38.js"
+    "static/css/main.2f5717b3.css",
+    "static/js/main.7f1843ee.js"
   ]
 }
