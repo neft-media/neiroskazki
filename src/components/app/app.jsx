@@ -3,6 +3,7 @@ import { MantineProvider } from '@mantine/core';
 
 import Homepage from "../../pages/homepage/homepage";
 import Mansi from "../../pages/tales/mansi/mansi";
+import Rus from "../../pages/tales/rus/rus";
 import Khanty from "../../pages/tales/khanty/khanty";
 import Notfoundpage from "../../pages/notfoundpage/notfoundpage";
 
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/tales/mansi" element={<Mansi />} />
+          <Route path="/tales/rus" element={<Rus />} />
           <Route path="/tales/khanty" element={<Khanty />} />
           <Route path="*" element={<Notfoundpage />} />
         </Routes>

@@ -1,4 +1,4 @@
-import CustomTooltip from "../../components/custom-tooltip/custom-tooltip"
+import CustomTooltip from "../../components/custom-tooltip/custom-tooltip";
 
 const tale_2_rus = {
   title: <>Как появились комары</>,
