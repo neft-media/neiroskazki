@@ -21,7 +21,7 @@ function Homepage() {
         }}
       ></div>
 
-      <h1 className={clsx(styles.title, "mt-12")}>Нейросказки</h1>
+      <h1 className={clsx(styles.title, "pt-12")}>Нейросказки</h1>
 
       <p className={clsx(styles.intro, "mt-12")}>
         NEFT представляет проект &laquo;Нейросказки&raquo;.
@@ -42,8 +42,9 @@ function Homepage() {
         {booksList.map((book) => (
           <Book key={book.id} book={book} />
         ))}
-
       </div>
+
+      <div className="spacer">&nbsp;</div>
 
     </>
   );
