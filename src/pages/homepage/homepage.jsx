@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import clsx from "clsx";
 
 import Book from "../../components/book/book";
@@ -44,7 +42,7 @@ function Homepage() {
         ))}
       </div>
 
-      <div className="spacer">&nbsp;</div>
+      <div className="footer-spacer">&nbsp;</div>
 
     </>
   );

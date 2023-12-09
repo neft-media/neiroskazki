@@ -1,0 +1,23 @@
+.clr_1 {
+  background: #CFB454;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: #CFB454 2;
+}
+
+.clr_2 {
+  background: #2E8A9E;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: #2E8A9E 2;
+}
+
+.clr_3 {
+  background: #79247B;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: #79247B 2;
+}

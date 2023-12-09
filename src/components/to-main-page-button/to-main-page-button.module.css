@@ -23,7 +23,18 @@
   transition: 0.5s;
 }
 
+.button:visited {
+  color: #E79808;
+  background-color: transparent;
+}
+
 .button:hover {
   background-color: #E79808;
   color: white;
 }
+
+.button:active {
+  color: #E79808;
+  background-color: transparent;
+}
+
