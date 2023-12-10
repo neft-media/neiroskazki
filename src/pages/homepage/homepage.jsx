@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import clsx from "clsx";
 
 import Book from "../../components/book/book";
@@ -9,7 +11,23 @@ import styles from "./homepage.module.css";
 import singlePattern1 from '../../images/rus/single-pattern-rus-1.svg';
 import singlePattern2 from '../../images/rus/single-pattern-rus-2.svg';
 
+const mobileBreakpoint = 700;
+
 function Homepage() {
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -37,11 +55,18 @@ function Homepage() {
         Приятного чтения!
       </p>
 
-      <div className={clsx(styles.shelf, "mt-12")}>
-        {booksList.map((book) => (
-          <Book key={book.id} book={book} />
-        ))}
-      </div>
+      {
+        windowWidth < mobileBreakpoint
+          ?
+            <div className={clsx(styles.shelf, "mt-12")}>
+              {booksList.map((book) => (
+                <Book key={book.id} book={book} />
+              ))}
+            </div>
+          :
+            <p>hello</p>
+      }
+
 
       <div className="footer-spacer">&nbsp;</div>
 
