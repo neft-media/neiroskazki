@@ -10,6 +10,7 @@ import singlePattern1 from '../../images/rus/single-pattern-rus-1.svg';
 import singlePattern2 from '../../images/rus/single-pattern-rus-2.svg';
 
 function Homepage() {
+
   return (
     <>
       <div
