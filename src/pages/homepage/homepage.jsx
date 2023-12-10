@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import clsx from "clsx";
 
 import Book from "../../components/book/book";
+import BookGallery from "../../components/book-gallery/book-gallery";
 
 import booksList from "../../books-list";
 
@@ -12,6 +13,7 @@ import singlePattern1 from '../../images/rus/single-pattern-rus-1.svg';
 import singlePattern2 from '../../images/rus/single-pattern-rus-2.svg';
 
 const mobileBreakpoint = 700;
+const OPTIONS = { loop: true, align: 'center' }
 
 function Homepage() {
 
@@ -64,7 +66,7 @@ function Homepage() {
               ))}
             </div>
           :
-            <p>hello</p>
+            <BookGallery books={booksList} options={OPTIONS} />
       }
 
 

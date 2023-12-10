@@ -6,6 +6,8 @@
   src: url("../fonts/GropledBold.woff") format("woff");
 }
 @import url("./box.css");
+@import url("./embla.css");
+
 
 
 * {

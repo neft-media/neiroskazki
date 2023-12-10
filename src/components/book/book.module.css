@@ -6,6 +6,7 @@
   aspect-ratio: 200 / 250;
   border-radius: 2% 8% 8% 2%;
   overflow: hidden;
+  margin-inline: auto;
 }
 
 .cover {
