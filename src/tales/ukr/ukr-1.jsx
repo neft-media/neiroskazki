@@ -73,8 +73,7 @@ const tale_1_rus = {
           term="Фунт"
           definition={
             <>
-              &nbsp;&mdash;&nbsp;чуть больше
-              400&nbsp;граммов.&nbsp;10&nbsp;фунтов&nbsp;&mdash;
+              &nbsp;&mdash;&nbsp;чуть больше&nbsp;400&nbsp;граммов. 10&nbsp;фунтов&nbsp;&mdash;
               4&nbsp;килограмма. Столько весит кирпич или рюкзак
               третьеклассника.
             </>
