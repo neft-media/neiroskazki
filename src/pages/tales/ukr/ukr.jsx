@@ -55,7 +55,7 @@ import { tale_3_rus, tale_3_ukr } from "../../../tales/ukr/ukr-3";
 
 
 
-function Mansi() {
+function Ukr() {
 
   const imageBreakpoint = "700px";
 
@@ -627,5 +627,5 @@ function Mansi() {
   );
 }
 
-export default Mansi;
+export default Ukr;
 

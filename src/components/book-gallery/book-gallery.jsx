@@ -79,8 +79,14 @@ const BookGallery = (props) => {
           }
         })
       }
-      const tweenValue = 1 - Math.abs(diffToTarget * TWEEN_FACTOR)
+      let tweenValue = 1 - Math.abs(diffToTarget * TWEEN_FACTOR)
+
+      // Чтобы книги по бокам были одного размера
+      if (tweenValue <= 0.75) {
+        tweenValue = 0.75
+      }
       return numberWithinRange(tweenValue, 0, 1)
+
     })
     setTweenValues(styles)
   }, [emblaApi, setTweenValues])

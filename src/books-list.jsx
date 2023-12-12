@@ -10,6 +10,9 @@ import khantyCover from "./images/books/khanty-cover.jpg";
 import ukrShape from "./images/books/ukr-shape.svg";
 import ukrCover from "./images/books/ukr-cover.jpg";
 
+import tatShape from "./images/books/tat-shape.svg";
+import tatCover from "./images/books/tat-cover.jpg";
+
 const booksList = [
   {
     id: 1,
@@ -53,6 +56,17 @@ const booksList = [
     styles: {
       background: "linear-gradient(0deg, #A7452F -2.21%, #FFBF74 100.6%)",
       boxShadow: "0px 17px 12px -10px rgba(140, 112, 91, 0.80)"
+    },
+  },
+  {
+    id: 5,
+    nation: "Татары",
+    link: "/tales/tat",
+    pattern: tatShape,
+    cover: tatCover,
+    styles: {
+      background: "linear-gradient(0deg, #2F7CA7 -2.21%, #FF74AE 100.6%)",
+      boxShadow: "0px 17px 12px -10px rgba(91, 111, 140, 0.80)"
     },
   },
 ]

@@ -13,49 +13,49 @@ import { motion } from "framer-motion"
 import LangSelector from '../../../components/lang-selector/lang-selector';
 import ToMainPageButton from '../../../components/to-main-page-button/to-main-page-button';
 
-import styles from "./mansi.module.css";
+import styles from "./tat.module.css";
 
 // Картинки
 import backIcon from '../../../images/to_left.svg';
 
-import patternMansi1 from '../../../images/mansi/pattern-mansi-1.svg';
-import patternMansi2 from '../../../images/mansi/pattern-mansi-2.svg';
-import patternMansi3 from '../../../images/mansi/pattern-mansi-3.svg';
-import patternMansi4 from '../../../images/mansi/pattern-mansi-4.svg';
+import patternTat1 from '../../../images/tat/pattern-tat-1.svg';
+import patternTat2 from '../../../images/tat/pattern-tat-2.svg';
+import patternTat3 from '../../../images/tat/pattern-tat-3.svg';
+import patternTat4 from '../../../images/tat/pattern-tat-4.svg';
 
-import singlePatternMansi1 from '../../../images/mansi/single-pattern-mansi-1.svg';
-import singlePatternMansi2 from '../../../images/mansi/single-pattern-mansi-2.svg';
-
-
-import tale1Image1Hor from "../../../images/mansi/tale1/mansi_1_1_h.jpg";
-import tale1Image1Vert from "../../../images/mansi/tale1/mansi_1_1_v.jpg";
-import tale1Image2Hor from "../../../images/mansi/tale1/mansi_1_2_h.jpg";
-import tale1Image2Vert from "../../../images/mansi/tale1/mansi_1_2_v.jpg";
-import tale1Image3Hor from "../../../images/mansi/tale1/mansi_1_3_h.jpg";
-import tale1Image3Vert from "../../../images/mansi/tale1/mansi_1_3_v.jpg";
-
-import tale2Image1Hor from "../../../images/mansi/tale2/mansi_2_1_h.jpg";
-import tale2Image1Vert from "../../../images/mansi/tale2/mansi_2_1_v.jpg";
-import tale2Image2Hor from "../../../images/mansi/tale2/mansi_2_2_h.jpg";
-import tale2Image2Vert from "../../../images/mansi/tale2/mansi_2_2_v.jpg";
-import tale2Image3Hor from "../../../images/mansi/tale2/mansi_2_3_h.jpg";
-import tale2Image3Vert from "../../../images/mansi/tale2/mansi_2_3_v.jpg";
-
-import tale3Image1Hor from "../../../images/mansi/tale3/mansi_3_1_h.jpg";
-import tale3Image1Vert from "../../../images/mansi/tale3/mansi_3_1_v.jpg";
-import tale3Image2Hor from "../../../images/mansi/tale3/mansi_3_2_h.jpg";
-import tale3Image2Vert from "../../../images/mansi/tale3/mansi_3_2_v.jpg";
-import tale3Image3Hor from "../../../images/mansi/tale3/mansi_3_3_h.jpg";
-import tale3Image3Vert from "../../../images/mansi/tale3/mansi_3_3_v.jpg";
+import singlePatternTat1 from '../../../images/tat/single-pattern-tat-1.svg';
+import singlePatternTat2 from '../../../images/tat/single-pattern-tat-2.svg';
 
 
-import { tale_1_rus, tale_1_mansi } from "../../../tales/mansi/mansi-1";
-import { tale_2_rus, tale_2_mansi } from "../../../tales/mansi/mansi-2";
-import { tale_3_rus, tale_3_mansi } from "../../../tales/mansi/mansi-3";
+import tale1Image1Hor from "../../../images/tat/tale1/tat_1_1_h.jpg";
+import tale1Image1Vert from "../../../images/tat/tale1/tat_1_1_v.jpg";
+import tale1Image2Hor from "../../../images/tat/tale1/tat_1_2_h.jpg";
+import tale1Image2Vert from "../../../images/tat/tale1/tat_1_2_v.jpg";
+import tale1Image3Hor from "../../../images/tat/tale1/tat_1_3_h.jpg";
+import tale1Image3Vert from "../../../images/tat/tale1/tat_1_3_v.jpg";
+
+import tale2Image1Hor from "../../../images/tat/tale2/tat_2_1_h.jpg";
+import tale2Image1Vert from "../../../images/tat/tale2/tat_2_1_v.jpg";
+import tale2Image2Hor from "../../../images/tat/tale2/tat_2_2_h.jpg";
+import tale2Image2Vert from "../../../images/tat/tale2/tat_2_2_v.jpg";
+import tale2Image3Hor from "../../../images/tat/tale2/tat_2_3_h.jpg";
+import tale2Image3Vert from "../../../images/tat/tale2/tat_2_3_v.jpg";
+
+import tale3Image1Hor from "../../../images/tat/tale3/tat_3_1_h.jpg";
+import tale3Image1Vert from "../../../images/tat/tale3/tat_3_1_v.jpg";
+import tale3Image2Hor from "../../../images/tat/tale3/tat_3_2_h.jpg";
+import tale3Image2Vert from "../../../images/tat/tale3/tat_3_2_v.jpg";
+import tale3Image3Hor from "../../../images/tat/tale3/tat_3_3_h.jpg";
+import tale3Image3Vert from "../../../images/tat/tale3/tat_3_3_v.jpg";
+
+
+import { tale_1_rus, tale_1_tat } from "../../../tales/tat/tat-1";
+import { tale_2_rus, tale_2_tat } from "../../../tales/tat/tat-2";
+import { tale_3_rus, tale_3_tat } from "../../../tales/tat/tat-3";
 
 
 
-function Mansi() {
+function Tat() {
 
   const imageBreakpoint = "700px";
 
@@ -79,30 +79,30 @@ function Mansi() {
 
   // Селекторы языка
   const lang1 = "РУС";
-  const lang2 = "МАН";
+  const lang2 = "ТАТ";
 
   const [tale1IsRus, tale1LangHandler] = useDisclosure(
-    ("mansiTale1IsRus" in localStorage) ? localStorage.getItem("mansiTale1IsRus") === "true" : true
+    ("tatTale1IsRus" in localStorage) ? localStorage.getItem("tatTale1IsRus") === "true" : true
   );
 
   const [tale2IsRus, tale2LangHandler] = useDisclosure(
-    ("mansiTale2IsRus" in localStorage) ? localStorage.getItem("mansiTale2IsRus") === "true" : true
+    ("tatTale2IsRus" in localStorage) ? localStorage.getItem("tatTale2IsRus") === "true" : true
   );
 
   const [tale3IsRus, tale3LangHandler] = useDisclosure(
-    ("mansiTale3IsRus" in localStorage) ? localStorage.getItem("mansiTale3IsRus") === "true" : true
+    ("tatTale3IsRus" in localStorage) ? localStorage.getItem("tatTale3IsRus") === "true" : true
   );
 
   useEffect(() => {
-    localStorage.setItem('mansiTale1IsRus', tale1IsRus);
+    localStorage.setItem('tatTale1IsRus', tale1IsRus);
   }, [tale1IsRus]);
 
   useEffect(() => {
-    localStorage.setItem('mansiTale2IsRus', tale2IsRus);
+    localStorage.setItem('tatTale2IsRus', tale2IsRus);
   }, [tale2IsRus]);
 
   useEffect(() => {
-    localStorage.setItem('mansiTale3IsRus', tale3IsRus);
+    localStorage.setItem('tatTale3IsRus', tale3IsRus);
   }, [tale3IsRus]);
 
   let tale1 = tale_1_rus;
@@ -110,15 +110,15 @@ function Mansi() {
   let tale3 = tale_3_rus;
 
   if (!tale1IsRus) {
-    tale1 = tale_1_mansi;
+    tale1 = tale_1_tat;
   }
 
   if (!tale2IsRus) {
-    tale2 = tale_2_mansi;
+    tale2 = tale_2_tat;
   }
 
   if (!tale3IsRus) {
-    tale3 = tale_3_mansi;
+    tale3 = tale_3_tat;
   }
 
 
@@ -135,7 +135,7 @@ function Mansi() {
       <div
         className={clsx("bg-patterns")}
         style={{
-          backgroundImage: `url(${singlePatternMansi1}), url(${singlePatternMansi2})`,
+          backgroundImage: `url(${singlePatternTat1}), url(${singlePatternTat2})`,
         }}
       ></div>
       <div className={clsx("page")}>
@@ -167,7 +167,7 @@ function Mansi() {
           }}
           styles={{
             content: {
-              backgroundImage: `url(${singlePatternMansi1}), url(${singlePatternMansi2})`,
+              backgroundImage: `url(${singlePatternTat1}), url(${singlePatternTat2})`,
             },
             header: {
               zIndex: "2000",
@@ -215,20 +215,40 @@ function Mansi() {
 
         {/* Заголовок и вводный абзац */}
 
-        <h1 className={clsx(styles.clr_1, "mt-12")}>Мансийские сказки</h1>
+        <h1 className={clsx(styles.clr_1, "mt-12")}>Татарские сказки</h1>
         <p className={clsx("intro_text", "mt-4")}>
-          Название Ханты-Мансийского автономного округа составлено
-          из&nbsp;названий двух коренных народов этих мест&nbsp;&mdash; ханты
-          и&nbsp;манси. Поэтому мы&nbsp;начинаем проект
-          &laquo;Нейросказки&raquo; именно с&nbsp;мансийского фольклора.
-          Представленные здесь сказки <a href="https://clck.ru/36Ks8p" target='_blank'>собрали и&nbsp;перевели</a>{" "}
-          сотрудники Обско-Угорского института прикладных исследований
-          и&nbsp;разработок.
+          Татары составляют около&nbsp;7% населения Югры, и&nbsp;это второй
+          по&nbsp;численности этнос в&nbsp;регионе после русских.
+          В&nbsp;подборку татарских сказок мы&nbsp;взяли не&nbsp;только образец
+          фольклора, но&nbsp;и&nbsp;два авторских произведения. Сказку
+          о&nbsp;двух петухах написал{" "}
+          <a
+            href="http://tatarlar.info/2023/09/15/abdulla-alish/"
+            target="_blank"
+          >
+            <nobr>Абдулла Алиш</nobr>
+          </a>
+          , а&nbsp;о&nbsp;водяной ведьме&nbsp;&mdash;{" "}
+          <a
+            href="https://www.culture.ru/persons/9630/gabdulla-tukai"
+            target="_blank"
+          >
+            <nobr>Габдулла Тукай</nobr>
+          </a>{" "}
+          (художественный перевод его стихов на&nbsp;русский сделал{" "}
+          <a
+            href="http://gabdullatukay.ru/rus/tukay-prize/laureates/2006-god/buharaev-ravil-raisovich-poet/"
+            target="_blank"
+          >
+            <nobr>Равиль Бухараев</nobr>
+          </a>
+          ). Эти сказки давно стали частью татарской культуры,
+          и&nbsp;современные читатели уже считают их&nbsp;народными.
         </p>
 
         <div className={clsx("pattern_wrapper")}>
           <div
-            style={{ backgroundImage: `url(${patternMansi1})` }}
+            style={{ backgroundImage: `url(${patternTat1})` }}
             className={clsx("pattern")}
           ></div>
         </div>
@@ -257,6 +277,8 @@ function Mansi() {
             {tale1.content.p0}
           </motion.p>
 
+          <motion.p {...animations}>{tale1.content.p1}</motion.p>
+
           <motion.div {...animations}>
             <picture className="image">
               <source
@@ -267,17 +289,24 @@ function Mansi() {
                 media={`(min-width: ${imageBreakpoint})`}
                 srcSet={`${tale1Image1Hor} 1500w`}
               />
-              <img src={tale1Image1Hor} alt="Охотник смотрит на озеро с гусями" />
+              <img
+                src={tale1Image1Hor}
+                alt="Старик-татарин смотрит вдаль на фоне полей и стогов"
+              />
             </picture>
           </motion.div>
 
-          <motion.p {...animations} className={clsx("big_text")}>
-            {tale1.content.p1}
-          </motion.p>
-
           <motion.p {...animations}>{tale1.content.p2}</motion.p>
 
-          <motion.p {...animations}>{tale1.content.p3}</motion.p>
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale1.content.p3}
+          </motion.p>
+
+          <motion.p {...animations}>{tale1.content.p4}</motion.p>
+
+          <motion.p {...animations}>{tale1.content.p5}</motion.p>
+
+          <motion.p {...animations}>{tale1.content.p6}</motion.p>
 
           <motion.div {...animations}>
             <picture className="image">
@@ -289,19 +318,28 @@ function Mansi() {
                 media={`(min-width: ${imageBreakpoint})`}
                 srcSet={`${tale1Image2Hor} 1500w`}
               />
-              <img src={tale1Image2Hor} alt="Гусь смотрит на читателя" />
+              <img
+                src={tale1Image2Hor}
+                alt="Закат над полем со стогами сена"
+              />
             </picture>
           </motion.div>
 
-          <motion.p {...animations}>{tale1.content.p4}</motion.p>
+          <motion.p {...animations}>{tale1.content.p7}</motion.p>
+
+          <motion.p {...animations}>{tale1.content.p8}</motion.p>
+
+          <motion.p {...animations}>{tale1.content.p9}</motion.p>
 
           <motion.p {...animations} className={clsx("big_text")}>
-            {tale1.content.p5}
+            {tale1.content.p10}
           </motion.p>
 
-          <motion.p {...animations}>{tale1.content.p6}</motion.p>
+          <motion.p {...animations}>{tale1.content.p11}</motion.p>
 
-          <motion.p {...animations}>{tale1.content.p7}</motion.p>
+          <motion.p {...animations}>{tale1.content.p12}</motion.p>
+
+          <motion.p {...animations}>{tale1.content.p13}</motion.p>
 
           <motion.div {...animations}>
             <picture className="image">
@@ -313,22 +351,30 @@ function Mansi() {
                 media={`(min-width: ${imageBreakpoint})`}
                 srcSet={`${tale1Image3Hor} 1500w`}
               />
-              <img src={tale1Image3Hor} alt="Охотник летит верхом на гусе" />
+              <img
+                src={tale1Image3Hor}
+                alt="Двое мужчин косят траву в поле"
+              />
             </picture>
           </motion.div>
 
-          <motion.p {...animations}>{tale1.content.p8}</motion.p>
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale1.content.p14}
+          </motion.p>
 
-          <motion.p {...animations}>{tale1.content.p9}</motion.p>
+          <motion.p {...animations}>{tale1.content.p15}</motion.p>
+
+          <motion.p {...animations}>{tale1.content.p16}</motion.p>
 
         </section>
 
         <div className={clsx("pattern_wrapper")}>
           <div
-            style={{ backgroundImage: `url(${patternMansi2})` }}
+            style={{ backgroundImage: `url(${patternTat2})` }}
             className={clsx("pattern")}
           ></div>
         </div>
+
 
         {/*-------------- Сказка 2 ----------------*/}
 
@@ -354,6 +400,11 @@ function Mansi() {
             {tale2.content.p0}
           </motion.p>
 
+          <motion.p {...animations}>{tale2.content.p1}</motion.p>
+
+          <motion.p {...animations}>{tale2.content.p2}</motion.p>
+
+
           <motion.div {...animations}>
             <picture className="image">
               <source
@@ -364,21 +415,26 @@ function Mansi() {
                 media={`(min-width: ${imageBreakpoint})`}
                 srcSet={`${tale2Image1Hor} 1500w`}
               />
-              <img src={tale2Image1Hor} alt="Зимний пейзаж" />
+              <img
+                src={tale2Image1Hor}
+                alt="Старик-татарин смотрит вдаль на фоне полей и стогов"
+              />
             </picture>
           </motion.div>
 
-          <motion.p {...animations}>{tale2.content.p1}</motion.p>
-
-          <motion.p {...animations}>{tale2.content.p2}</motion.p>
-
-          <motion.p {...animations} className={clsx("big_text")}>
-            {tale2.content.p3}
-          </motion.p>
+          <motion.p {...animations}>{tale2.content.p3}</motion.p>
 
           <motion.p {...animations}>{tale2.content.p4}</motion.p>
 
           <motion.p {...animations}>{tale2.content.p5}</motion.p>
+
+          <motion.p {...animations}>{tale2.content.p6}</motion.p>
+
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale2.content.p7}
+          </motion.p>
+
+          <motion.p {...animations}>{tale2.content.p8}</motion.p>
 
           <motion.div {...animations}>
             <picture className="image">
@@ -390,19 +446,16 @@ function Mansi() {
                 media={`(min-width: ${imageBreakpoint})`}
                 srcSet={`${tale2Image2Hor} 1500w`}
               />
-              <img src={tale2Image2Hor} alt="Лиса наблюдает за охотником" />
+              <img
+                src={tale2Image2Hor}
+                alt="Старая женщина несет черного петуха"
+              />
             </picture>
           </motion.div>
 
-          <motion.p {...animations}>{tale2.content.p6}</motion.p>
-
-          <motion.p {...animations} className={clsx("big_text")}>
-            {tale2.content.p7}
-          </motion.p>
-
-          <motion.p {...animations}>{tale2.content.p8}</motion.p>
-
           <motion.p {...animations}>{tale2.content.p9}</motion.p>
+
+          <motion.p {...animations}>{tale2.content.p10}</motion.p>
 
           <motion.div {...animations}>
             <picture className="image">
@@ -414,18 +467,26 @@ function Mansi() {
                 media={`(min-width: ${imageBreakpoint})`}
                 srcSet={`${tale2Image3Hor} 1500w`}
               />
-              <img src={tale2Image3Hor} alt="Лиса и птенец" />
+              <img
+                src={tale2Image3Hor}
+                alt="Черный и белый петух сидят на заборе"
+              />
             </picture>
           </motion.div>
+
+          <motion.p {...animations}>{tale2.content.p11}</motion.p>
+
+          <motion.p {...animations}>{tale2.content.p12}</motion.p>
 
         </section>
 
         <div className={clsx("pattern_wrapper")}>
           <div
-            style={{ backgroundImage: `url(${patternMansi3})` }}
+            style={{ backgroundImage: `url(${patternTat3})` }}
             className={clsx("pattern")}
           ></div>
         </div>
+
 
         {/*-------------- Сказка 3 ----------------*/}
 
@@ -451,11 +512,11 @@ function Mansi() {
             {tale3.content.p0}
           </motion.p>
 
-          <motion.p {...animations}>{tale3.content.p1}</motion.p>
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale3.content.p1}
+          </motion.p>
 
           <motion.p {...animations}>{tale3.content.p2}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p3}</motion.p>
 
           <motion.div {...animations}>
             <picture className="image">
@@ -467,33 +528,20 @@ function Mansi() {
                 media={`(min-width: ${imageBreakpoint})`}
                 srcSet={`${tale3Image1Hor} 1500w`}
               />
-              <img src={tale3Image1Hor} alt="Мужик с мешком" />
+              <img
+                src={tale3Image1Hor}
+                alt="Водяная ведьма держит в руках золотую расческу"
+              />
             </picture>
           </motion.div>
 
-          <motion.p {...animations}>{tale3.content.p4}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p5}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p6}</motion.p>
+          <motion.p {...animations}>{tale3.content.p3}</motion.p>
 
           <motion.p {...animations} className={clsx("big_text")}>
-            {tale3.content.p7}
+            {tale3.content.p4}
           </motion.p>
 
-          <motion.p {...animations}>{tale3.content.p8}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p9}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p10}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p11}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p12}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p13}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p14}</motion.p>
+          <motion.p {...animations}>{tale3.content.p5}</motion.p>
 
           <motion.div {...animations}>
             <picture className="image">
@@ -505,49 +553,26 @@ function Mansi() {
                 media={`(min-width: ${imageBreakpoint})`}
                 srcSet={`${tale3Image2Hor} 1500w`}
               />
-              <img src={tale3Image2Hor} alt="На столе лежат хлеб, жареная рыба и деревянная ступка" />
+              <img
+                src={tale3Image2Hor}
+                alt="Мальчик бежит в деревню, держа в руке золотую расческу"
+              />
             </picture>
           </motion.div>
 
-          <motion.p {...animations}>{tale3.content.p15}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p16}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p17}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p18}</motion.p>
+          <motion.p {...animations}>{tale3.content.p6}</motion.p>
 
           <motion.p {...animations} className={clsx("big_text")}>
-            {tale3.content.p19}
+            {tale3.content.p7}
           </motion.p>
 
-          <motion.p {...animations}>{tale3.content.p20}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p21}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p22}</motion.p>
+          <motion.p {...animations}>{tale3.content.p8}</motion.p>
 
           <motion.p {...animations} className={clsx("big_text")}>
-            {tale3.content.p23}
+            {tale3.content.p9}
           </motion.p>
 
-          <motion.p {...animations}>{tale3.content.p24}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p25}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p26}</motion.p>
-
-          <motion.p {...animations} className={clsx("big_text")}>
-            {tale3.content.p27}
-          </motion.p>
-
-          <motion.p {...animations}>{tale3.content.p28}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p29}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p30}</motion.p>
-
-          <motion.p {...animations}>{tale3.content.p31}</motion.p>
+          <motion.p {...animations}>{tale3.content.p10}</motion.p>
 
           <motion.div {...animations}>
             <picture className="image">
@@ -559,9 +584,20 @@ function Mansi() {
                 media={`(min-width: ${imageBreakpoint})`}
                 srcSet={`${tale3Image3Hor} 1500w`}
               />
-              <img src={tale3Image3Hor} alt="Деревянная ступка на морском дне между горок соли" />
+              <img
+                src={tale3Image3Hor}
+                alt="Золотая расческа лежит на подоконнике"
+              />
             </picture>
           </motion.div>
+
+          <motion.p {...animations}>{tale3.content.p11}</motion.p>
+
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale3.content.p12}
+          </motion.p>
+
+          <motion.p {...animations}>{tale3.content.p13}</motion.p>
 
 
         </section>
@@ -570,7 +606,7 @@ function Mansi() {
 
         <div className={clsx("pattern_wrapper")}>
           <div
-            style={{ backgroundImage: `url(${patternMansi4})` }}
+            style={{ backgroundImage: `url(${patternTat4})` }}
             className={clsx("pattern")}
           ></div>
         </div>
@@ -581,5 +617,5 @@ function Mansi() {
   );
 }
 
-export default Mansi;
+export default Tat;
 
