@@ -7,6 +7,7 @@ import Rus from "../../pages/tales/rus/rus";
 import Khanty from "../../pages/tales/khanty/khanty";
 import Ukr from "../../pages/tales/ukr/ukr";
 import Tat from "../../pages/tales/tat/tat";
+import Tad from "../../pages/tales/tad/tad";
 import Notfoundpage from "../../pages/notfoundpage/notfoundpage";
 
 import '@mantine/core/styles.css';
@@ -24,6 +25,7 @@ function App() {
           <Route path="/tales/khanty" element={<Khanty />} />
           <Route path="/tales/ukr" element={<Ukr />} />
           <Route path="/tales/tat" element={<Tat />} />
+          <Route path="/tales/tad" element={<Tad />} />
           <Route path="*" element={<Notfoundpage />} />
         </Routes>
       </MantineProvider>

@@ -183,6 +183,10 @@ p {
   line-height: 1.45;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .big_text {
   font-size: 35px;
 }

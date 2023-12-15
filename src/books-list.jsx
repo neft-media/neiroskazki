@@ -13,6 +13,9 @@ import ukrCover from "./images/books/ukr-cover.jpg";
 import tatShape from "./images/books/tat-shape.svg";
 import tatCover from "./images/books/tat-cover.jpg";
 
+import tadShape from "./images/books/tad-shape.svg";
+import tadCover from "./images/books/tad-cover.jpg";
+
 const booksList = [
   {
     id: 1,
@@ -67,6 +70,17 @@ const booksList = [
     styles: {
       background: "linear-gradient(0deg, #2F7CA7 -2.21%, #FF74AE 100.6%)",
       boxShadow: "0px 17px 12px -10px rgba(91, 111, 140, 0.80)"
+    },
+  },
+  {
+    id: 6,
+    nation: "Таджики",
+    link: "/tales/tad",
+    pattern: tadShape,
+    cover: tadCover,
+    styles: {
+      background: "linear-gradient(0deg, #6BA72F -2.21%, #FF9E74 100.6%)",
+      boxShadow: "0px 17px 12px -10px rgba(101, 140, 91, 0.80)"
     },
   },
 ]
