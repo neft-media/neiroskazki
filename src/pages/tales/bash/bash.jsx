@@ -18,10 +18,10 @@ import styles from "./bash.module.css";
 // Картинки
 import backIcon from '../../../images/to_left.svg';
 
-import patternTad1 from '../../../images/tad/pattern-tad-1.svg';
-import patternTad2 from '../../../images/tad/pattern-tad-2.svg';
-import patternTad3 from '../../../images/tad/pattern-tad-3.svg';
-import patternTad4 from '../../../images/tad/pattern-tad-4.svg';
+import patternBash1 from '../../../images/bash/pattern-bash-1.svg';
+import patternBash2 from '../../../images/bash/pattern-bash-2.svg';
+import patternBash3 from '../../../images/bash/pattern-bash-3.svg';
+import patternBash4 from '../../../images/bash/pattern-bash-4.svg';
 
 import singlePatternBash1 from '../../../images/bash/single-pattern-bash-1.svg';
 import singlePatternBash2 from '../../../images/bash/single-pattern-bash-2.svg';
@@ -235,7 +235,7 @@ function Bash() {
 
         <div className={clsx("pattern_wrapper")}>
           <div
-            style={{ backgroundImage: `url(${patternTad1})` }}
+            style={{ backgroundImage: `url(${patternBash1})` }}
             className={clsx("pattern")}
           ></div>
         </div>
@@ -357,7 +357,7 @@ function Bash() {
 
         <div className={clsx("pattern_wrapper")}>
           <div
-            style={{ backgroundImage: `url(${patternTad2})` }}
+            style={{ backgroundImage: `url(${patternBash2})` }}
             className={clsx("pattern")}
           ></div>
         </div>
@@ -408,10 +408,6 @@ function Bash() {
             </picture>
           </motion.div>
 
-          <motion.p {...animations} className={clsx("big_text")}>
-            {tale2.content.p2}
-          </motion.p>
-
           <motion.p {...animations}>{tale2.content.p3}</motion.p>
 
           <motion.p {...animations}>{tale2.content.p4}</motion.p>
@@ -445,23 +441,165 @@ function Bash() {
 
           <motion.p {...animations}>{tale2.content.p9}</motion.p>
 
+          <motion.p {...animations}>{tale2.content.p10}</motion.p>
+
+          <motion.p {...animations}>{tale2.content.p11}</motion.p>
+
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale2.content.p12}
+          </motion.p>
+
+          <motion.p {...animations}>{tale2.content.p13}</motion.p>
+
+          <motion.p {...animations}>{tale2.content.p14}</motion.p>
+
+          <motion.div {...animations}>
+            <picture className="image">
+              <source
+                media={`(max-width: ${imageBreakpoint})`}
+                srcSet={`${tale2Image3Vert} 1000w`}
+              />
+              <source
+                media={`(min-width: ${imageBreakpoint})`}
+                srcSet={`${tale2Image3Hor} 1500w`}
+              />
+              <img
+                src={tale2Image3Hor}
+                alt="Конь золотого цвета стоит у озера"
+              />
+            </picture>
+          </motion.div>
+
+          <motion.p {...animations}>{tale2.content.p15}</motion.p>
+
+          <motion.p {...animations}>{tale2.content.p16}</motion.p>
 
         </section>
 
         <div className={clsx("pattern_wrapper")}>
           <div
-            style={{ backgroundImage: `url(${patternTad2})` }}
+            style={{ backgroundImage: `url(${patternBash3})` }}
             className={clsx("pattern")}
           ></div>
         </div>
 
 
+        {/*-------------- Сказка 3 ----------------*/}
+
+        <section ref={scrollRefs.thirdTale} className={clsx("tale")}>
+          <motion.div {...animations}>
+            <LangSelector
+              lang1={lang1}
+              lang2={lang2}
+              rus={tale3IsRus}
+              toggleLang={tale3LangHandler.toggle}
+            />
+          </motion.div>
+
+          <motion.h2
+            {...animations}
+            className={clsx(!tale3IsRus && "foreign", styles.clr_3, "mt-5")}
+          >
+            {tale3.title}
+            <span className={clsx("tale_id")}>{tale3.id}</span>
+          </motion.h2>
+
+          <motion.p {...animations} className={clsx("mt-2")}>
+            {tale3.content.p0}
+          </motion.p>
+
+          <motion.p {...animations}>{tale3.content.p1}</motion.p>
+
+          <motion.div {...animations}>
+            <picture className="image">
+              <source
+                media={`(max-width: ${imageBreakpoint})`}
+                srcSet={`${tale3Image1Vert} 1000w`}
+              />
+              <source
+                media={`(min-width: ${imageBreakpoint})`}
+                srcSet={`${tale3Image1Hor} 1500w`}
+              />
+              <img
+                src={tale3Image1Hor}
+                alt="Медведь отгоняет пчёл от улья с мёдом"
+              />
+            </picture>
+          </motion.div>
+
+          <motion.p {...animations}>{tale3.content.p2}</motion.p>
+
+          <motion.p {...animations}>{tale3.content.p3}</motion.p>
+
+          <motion.p {...animations}>{tale3.content.p4}</motion.p>
+
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale3.content.p5}
+          </motion.p>
+
+          <motion.p {...animations}>{tale3.content.p6}</motion.p>
+
+          <motion.div {...animations}>
+            <picture className="image">
+              <source
+                media={`(max-width: ${imageBreakpoint})`}
+                srcSet={`${tale3Image2Vert} 1000w`}
+              />
+              <source
+                media={`(min-width: ${imageBreakpoint})`}
+                srcSet={`${tale3Image2Hor} 1500w`}
+              />
+              <img
+                src={tale3Image2Hor}
+                alt="Медведь убегает в лес на четырех лапах"
+              />
+            </picture>
+          </motion.div>
+
+          <motion.p {...animations}>{tale3.content.p7}</motion.p>
+
+          <motion.p {...animations}>{tale3.content.p8}</motion.p>
+
+          <motion.p {...animations}>{tale3.content.p9}</motion.p>
+
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale3.content.p10}
+          </motion.p>
+
+          <motion.p {...animations}>{tale3.content.p11}</motion.p>
+
+          <motion.div {...animations}>
+            <picture className="image">
+              <source
+                media={`(max-width: ${imageBreakpoint})`}
+                srcSet={`${tale3Image3Vert} 1000w`}
+              />
+              <source
+                media={`(min-width: ${imageBreakpoint})`}
+                srcSet={`${tale3Image3Hor} 1500w`}
+              />
+              <img
+                src={tale3Image3Hor}
+                alt="Пчёлы летают вокруг улья с мёдом"
+              />
+            </picture>
+          </motion.div>
+
+          <motion.p {...animations} className={clsx("big_text")}>
+            {tale3.content.p12}
+          </motion.p>
+
+          <motion.p {...animations}>{tale3.content.p13}</motion.p>
+
+          <motion.p {...animations}>{tale3.content.p14}</motion.p>
+
+        </section>
 
         <ToMainPageButton />
 
         <div className={clsx("pattern_wrapper")}>
           <div
-            style={{ backgroundImage: `url(${patternTad4})` }}
+            style={{ backgroundImage: `url(${patternBash4})` }}
             className={clsx("pattern")}
           ></div>
         </div>
