@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/neiroskazki/static/css/main.410f0a87.css",
+    "main.css": "/neiroskazki/static/css/main.b1f79fce.css",
     "main.js": "/neiroskazki/static/js/main.50104c60.js",
     "static/js/787.8449eb72.chunk.js": "/neiroskazki/static/js/787.8449eb72.chunk.js",
     "static/media/ukr_1_2_h.jpg": "/neiroskazki/static/media/ukr_1_2_h.7e617036fc8535f022df.jpg",
@@ -152,12 +152,12 @@
     "index.html": "/neiroskazki/index.html",
     "static/media/pattern-rus-2.svg": "/neiroskazki/static/media/pattern-rus-2.0abaa34c455ad3c9f2cdbc83d8e403f2.svg",
     "static/media/to_left.svg": "/neiroskazki/static/media/to_left.7b27ef04f8460a302167e73d47287920.svg",
-    "main.410f0a87.css.map": "/neiroskazki/static/css/main.410f0a87.css.map",
+    "main.b1f79fce.css.map": "/neiroskazki/static/css/main.b1f79fce.css.map",
     "main.50104c60.js.map": "/neiroskazki/static/js/main.50104c60.js.map",
     "787.8449eb72.chunk.js.map": "/neiroskazki/static/js/787.8449eb72.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.410f0a87.css",
+    "static/css/main.b1f79fce.css",
     "static/js/main.50104c60.js"
   ]
 }
