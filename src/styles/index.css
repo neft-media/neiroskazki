@@ -176,6 +176,19 @@ a:hover, a:visited {
   color: inherit;
 }
 
+.refWithQuotes {
+  border: none;
+}
+
+.refQuotes {
+  border: none;
+}
+
+.refText {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+
 p {
   margin-top: calc(var(--offset-base-size) * 5);
   font-size: 25px;

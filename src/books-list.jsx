@@ -83,6 +83,17 @@ const booksList = [
       boxShadow: "0px 17px 12px -10px rgba(101, 140, 91, 0.80)"
     },
   },
+  {
+    id: 7,
+    nation: "Башкиры",
+    link: "/tales/bash",
+    pattern: tadShape,
+    cover: tadCover,
+    styles: {
+      background: "linear-gradient(0deg, #6BA72F -2.21%, #FF9E74 100.6%)",
+      boxShadow: "0px 17px 12px -10px rgba(101, 140, 91, 0.80)"
+    },
+  },
 ]
 
 export default booksList;
