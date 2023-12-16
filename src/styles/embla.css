@@ -1,3 +1,7 @@
+.book-gallery {
+  overflow: hidden;
+}
+
 .embla {
   --slide-spacing: 1rem;
   --slide-size: 21%; /* 5 slides */
@@ -95,22 +99,22 @@
 .side-glow {
   position: absolute;
   width: 10%;
-  top: 0;
+  top: -20%;
   bottom: 0;
-  /* left: 0;
-  right: 0; */
   z-index: 1;
-  /* background: linear-gradient(to right, white, transparent); */
+  border-radius: 50%;
+  filter: blur(30px);
 }
 
 .glow-left {
-  left: 0;
-  background: linear-gradient(to right, white, transparent);
+  left: -5%;
+  background-color: #fff;
 }
 
 .glow-right {
-  right: 0;
-  background: linear-gradient(to left, white, transparent);
+  right: -5%;
+  background-color: #fff;
+
 }
 
 .embla__dot {
