@@ -16,6 +16,9 @@ import tatCover from "./images/books/tat-cover.jpg";
 import tadShape from "./images/books/tad-shape.svg";
 import tadCover from "./images/books/tad-cover.jpg";
 
+import bashShape from "./images/books/bash-shape.svg";
+import bashCover from "./images/books/bash-cover.jpg";
+
 const booksList = [
   {
     id: 1,
@@ -81,6 +84,17 @@ const booksList = [
     styles: {
       background: "linear-gradient(0deg, #6BA72F -2.21%, #FF9E74 100.6%)",
       boxShadow: "0px 17px 12px -10px rgba(101, 140, 91, 0.80)"
+    },
+  },
+  {
+    id: 7,
+    nation: "Башкиры",
+    link: "/tales/bash",
+    pattern: bashShape,
+    cover: bashCover,
+    styles: {
+      background: "linear-gradient(0deg, #2F51A7 -2.21%, #74D5FF 100.6%)",
+      boxShadow: "0px 17px 12px -10px rgba(91, 111, 140, 0.80)"
     },
   },
 ]
