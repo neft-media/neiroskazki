@@ -19,6 +19,9 @@ import tadCover from "./images/books/tad-cover.jpg";
 import bashShape from "./images/books/bash-shape.svg";
 import bashCover from "./images/books/bash-cover.jpg";
 
+import dagShape from "./images/books/dagestancy-shape.svg";
+import dagCover from "./images/books/dagestancy-cover.jpg";
+
 const booksList = [
   {
     id: 1,
@@ -95,6 +98,17 @@ const booksList = [
     styles: {
       background: "linear-gradient(0deg, #2F51A7 -2.21%, #74D5FF 100.6%)",
       boxShadow: "0px 17px 12px -10px rgba(91, 111, 140, 0.80)"
+    },
+  },
+  {
+    id: 7,
+    nation: "Дагестанцы",
+    link: "/tales/dagestancy",
+    pattern: dagShape,
+    cover: dagCover,
+    styles: {
+      background: "linear-gradient(0deg, #A72F2F -2.21%, #9874FF 100.6%)",
+      boxShadow: "0px 17px 12px -10px rgba(140, 91, 91, 0.80)"
     },
   },
 ]
