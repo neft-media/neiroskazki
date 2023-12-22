@@ -254,7 +254,7 @@ function Dag() {
           <motion.div {...animations}>
             <LangSelector
               lang1={lang1}
-              lang2={lang2}
+              lang2="НОГ"
               rus={tale1IsRus}
               toggleLang={tale1LangHandler.toggle}
             />
@@ -381,7 +381,7 @@ function Dag() {
           <motion.div {...animations}>
             <LangSelector
               lang1={lang1}
-              lang2={lang2}
+              lang2="ЛЕЗ"
               rus={tale2IsRus}
               toggleLang={tale2LangHandler.toggle}
             />
@@ -498,7 +498,7 @@ function Dag() {
           <motion.div {...animations}>
             <LangSelector
               lang1={lang1}
-              lang2={lang2}
+              lang2="КУМ"
               rus={tale3IsRus}
               toggleLang={tale3LangHandler.toggle}
             />
