@@ -81,7 +81,7 @@ function Dag() {
 
   // Селекторы языка
   const lang1 = "РУС";
-  const lang2 = "ДАГ";
+  // const lang2 = "ДАГ";
 
   const [tale1IsRus, tale1LangHandler] = useDisclosure(
     ("dagestancyTale1IsRus" in localStorage) ? localStorage.getItem("dagestancyTale1IsRus") === "true" : true
