@@ -22,6 +22,9 @@ import bashCover from "./images/books/bash-cover.jpg";
 import dagShape from "./images/books/dagestancy-shape.svg";
 import dagCover from "./images/books/dagestancy-cover.jpg";
 
+import azShape from "./images/books/az-shape.svg";
+import azCover from "./images/books/az-cover.jpg";
+
 const booksList = [
   {
     id: 1,
@@ -101,13 +104,24 @@ const booksList = [
     },
   },
   {
-    id: 7,
+    id: 8,
     nation: "Дагестанцы",
     link: "/tales/dagestancy",
     pattern: dagShape,
     cover: dagCover,
     styles: {
       background: "linear-gradient(0deg, #A72F2F -2.21%, #9874FF 100.6%)",
+      boxShadow: "0px 17px 12px -10px rgba(140, 91, 91, 0.80)"
+    },
+  },
+  {
+    id: 9,
+    nation: "Азербайджанцы",
+    link: "/tales/az",
+    pattern: azShape,
+    cover: azCover,
+    styles: {
+      background: "linear-gradient(0deg, #A72F2F -2.21%, #FF7474 100.6%)",
       boxShadow: "0px 17px 12px -10px rgba(140, 91, 91, 0.80)"
     },
   },

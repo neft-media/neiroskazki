@@ -10,6 +10,7 @@ import Tat from "../../pages/tales/tat/tat";
 import Tad from "../../pages/tales/tad/tad";
 import Bash from "../../pages/tales/bash/bash";
 import Dag from "../../pages/tales/dagestancy/dagestancy";
+import Az from "../../pages/tales/az/az";
 import Notfoundpage from "../../pages/notfoundpage/notfoundpage";
 
 import '@mantine/core/styles.css';
@@ -30,6 +31,7 @@ function App() {
           <Route path="/tales/tad" element={<Tad />} />
           <Route path="/tales/bash" element={<Bash />} />
           <Route path="/tales/dagestancy" element={<Dag />} />
+          <Route path="/tales/az" element={<Az />} />
           <Route path="*" element={<Notfoundpage />} />
         </Routes>
       </MantineProvider>
