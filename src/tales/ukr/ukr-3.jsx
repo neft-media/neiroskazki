@@ -122,7 +122,7 @@ const tale_3_rus = {
         в&nbsp;лесу рыба водится?
         <br />
         &mdash;&nbsp;А&nbsp;вот и&nbsp;водится,&nbsp;&mdash; говорит Петр.
-        &mdash;&nbsp;Кажется, в&nbsp;лесу сегодня рыбой пахнет, вот
+        &mdash; Кажется, в&nbsp;лесу сегодня рыбой пахнет, вот
         мы&nbsp;и&nbsp;ее&nbsp;соберем. Уж&nbsp;пойдем.
       </>
     ),
@@ -162,7 +162,7 @@ const tale_3_rus = {
         на&nbsp;груше. Разве бублики на&nbsp;груше растут?
         <br />
         &mdash;&nbsp;Конечно, не&nbsp;растут,&nbsp;&mdash; говорит&nbsp;он.
-        &mdash;&nbsp;Это, должно быть, туча бубличная проходила,
+        &mdash; Это, должно быть, туча бубличная проходила,
         да&nbsp;и&nbsp;зацепилась за&nbsp;лес&nbsp;&mdash; вот бублики
         и&nbsp;остались.
         <br />
@@ -175,12 +175,12 @@ const tale_3_rus = {
         ничего, вытаскивает второй&nbsp;&mdash; нету; тянет потом вершу,
         глядь&nbsp;&mdash; а&nbsp;там заяц:
         <br />
-        &mdash;&nbsp;Ох&nbsp;ты, матушка моя! &mdash;&nbsp;так и&nbsp;вскрикнула
-        Федосья. &mdash;&nbsp;Заяц в&nbsp;верше! И&nbsp;родилась
+        &mdash;&nbsp;Ох&nbsp;ты, матушка моя! &mdash; так и&nbsp;вскрикнула
+        Федосья. &mdash; Заяц в&nbsp;верше! И&nbsp;родилась
         и&nbsp;крестилась, а&nbsp;такого не&nbsp;видела.
         <br />
-        &mdash;&nbsp;Ну, что&nbsp;ж, что не&nbsp;видела! &mdash;&nbsp;говорит
-        Петр. &mdash;&nbsp;Не&nbsp;видела, так увидишь. Идем, пожалуй, домой,
+        &mdash;&nbsp;Ну, что&nbsp;ж, что не&nbsp;видела! &mdash; говорит
+        Петр. &mdash; Не&nbsp;видела, так увидишь. Идем, пожалуй, домой,
         а&nbsp;то&nbsp;поздно уже.
       </>
     ),
@@ -211,7 +211,7 @@ const tale_3_rus = {
         &mdash;&nbsp;Вот уж&nbsp;теперь, муженек, будем мы&nbsp;богатые.
         <br />
         &mdash;&nbsp;Да&nbsp;кто его знает, вот как пронюхает управляющий,
-        сразу&nbsp;ж отнимет. &mdash;&nbsp;Ну,&nbsp;&mdash; говорит
+        сразу&nbsp;ж отнимет. &mdash; Ну,&nbsp;&mdash; говорит
         жена,&nbsp;&mdash; а&nbsp;как&nbsp;же он&nbsp;дознается?
         Уж&nbsp;я&nbsp;никому не&nbsp;скажу.
         <br />
@@ -234,7 +234,7 @@ const tale_3_rus = {
       <>
         А&nbsp;тут под вечер на&nbsp;селе шум и&nbsp;гомон слыхать.
         <br />
-        &mdash;&nbsp;Что это такое, муженек? &mdash;&nbsp;спрашивает Федосья.
+        &mdash;&nbsp;Что это такое, муженек? &mdash; спрашивает Федосья.
         <br />
         &mdash;&nbsp;Да&nbsp;там...
         <br />
@@ -259,11 +259,11 @@ const tale_3_rus = {
         и&nbsp;так уж&nbsp;ей&nbsp;не&nbsp;терпится:
         <br />
         &mdash;&nbsp;Ох, беда-то какая! Побегу я&nbsp;к&nbsp;куме Меланке
-        да&nbsp;расскажу! &mdash;&nbsp;вскрикнула Федосья, так с&nbsp;места
+        да&nbsp;расскажу! &mdash; вскрикнула Федосья, так с&nbsp;места
         и&nbsp;вскочила.
         <br />
         &mdash;&nbsp;Да&nbsp;ты&nbsp;лучше не&nbsp;ходи, а&nbsp;сиди
-        дома,&nbsp;&mdash; говорит муж. &mdash;&nbsp;Ты&nbsp;разве
+        дома,&nbsp;&mdash; говорит муж. &mdash; Ты&nbsp;разве
         не&nbsp;знаешь нашего управляющего? Уж&nbsp;он&nbsp;как дознается, что
         ты&nbsp;про него рассказывала, то&nbsp;меня и&nbsp;тебя съест.
       </>
@@ -299,7 +299,7 @@ const tale_3_rus = {
         <br />
         &mdash;&nbsp;Ну&nbsp;да, может, бог даст, скоро не&nbsp;будем бедные...
         <br />
-        &mdash;&nbsp;Как так? &mdash;&nbsp;спрашивает Меланка, а&nbsp;сама уже
+        &mdash;&nbsp;Как так? &mdash; спрашивает Меланка, а&nbsp;сама уже
         и&nbsp;уши навострила.
         <br />
         &mdash;&nbsp;Ох, кумушка, да&nbsp;не&nbsp;знаю, как
@@ -379,8 +379,8 @@ const tale_3_rus = {
         &mdash;&nbsp;А&nbsp;что моя жена говорит? Ей&nbsp;малость ума
         не&nbsp;хватает, она и&nbsp;чего на&nbsp;свете нет наплетет.
         <br />
-        &mdash;&nbsp;А-а, так ты&nbsp;так! &mdash;&nbsp;говорит управляющий.
-        &mdash;&nbsp;Позвать сюда жену!
+        &mdash;&nbsp;А-а, так ты&nbsp;так! &mdash; говорит управляющий.
+        &mdash; Позвать сюда жену!
       </>
     ),
     p29: (
@@ -401,13 +401,13 @@ const tale_3_rus = {
     ),
     p30: (
       <>
-        &mdash;&nbsp;А&nbsp;когда это было? &mdash;&nbsp;спрашивает управляющий.
+        &mdash;&nbsp;А&nbsp;когда это было? &mdash; спрашивает управляющий.
         <br />
         &mdash;&nbsp;Ага, когда! Как раз тогда, когда воняло рыбой из&nbsp;лесу
         и&nbsp;ходили мы&nbsp;в&nbsp;лес за&nbsp;ней да&nbsp;под каждым кустом
         рыбу собирали.
         <br />
-        &mdash;&nbsp;Что еще скажешь? &mdash;&nbsp;спрашивает Петр.
+        &mdash;&nbsp;Что еще скажешь? &mdash; спрашивает Петр.
         <br />
         &mdash;&nbsp;Э, что! Теперь-то уже не&nbsp;отвертишься. Это самое тогда
         и&nbsp;было, когда мы&nbsp;в&nbsp;лесу рыбу собирали, и&nbsp;надвинулась
@@ -425,7 +425,7 @@ const tale_3_rus = {
         пан, по&nbsp;селу водили...
         <br />
         &mdash;&nbsp;А&nbsp;чего меня по&nbsp;селу водили?
-        &mdash;&nbsp;спрашивает управляющий.
+        &mdash; спрашивает управляющий.
         <br />
         &mdash;&nbsp;Да&nbsp;вот, простите... Уж&nbsp;раз вы&nbsp;спрашиваете,
         то&nbsp;скажу... Как раз тогда, когда вас теми колбасами били, что
@@ -457,8 +457,8 @@ const tale_3_rus = {
         &mdash;&nbsp;Вот как&nbsp;ты,&nbsp;&mdash; говорит,&nbsp;&mdash; меня
         подвел!
         <br />
-        &mdash;&nbsp;Федосья, жена моя милая! &mdash;&nbsp;говорит Петро.
-        &mdash;&nbsp;Не&nbsp;я&nbsp;тебя подвел, ты&nbsp;сама себя подвела.
+        &mdash;&nbsp;Федосья, жена моя милая! &mdash; говорит Петро.
+        &mdash; Не&nbsp;я&nbsp;тебя подвел, ты&nbsp;сама себя подвела.
         Не&nbsp;болтай никогда языком, вот ничего и&nbsp;не&nbsp;будет.
         А&nbsp;теперь не&nbsp;сердись, давай помиримся.
       </>
@@ -578,7 +578,7 @@ const tale_3_ukr = {
         у&nbsp;верші ловились?
         <br />
         &mdash;&nbsp;Не&nbsp;видано! Отже, ти&nbsp;й&nbsp;риби в&nbsp;лісі
-        не&nbsp;бачила, а&nbsp;єсть&nbsp;же! Ходім лиш! &mdash;&nbsp;каже він.
+        не&nbsp;бачила, а&nbsp;єсть&nbsp;же! Ходім лиш! &mdash; каже він.
       </>
     ),
     p10: (
@@ -609,10 +609,10 @@ const tale_3_ukr = {
         заєць:
         <br />
         &mdash;&nbsp;Ох&nbsp;ти&nbsp;ж моя ненько!
-        &mdash;&nbsp;аж&nbsp;скрикнула Хвеська.&mdash; Заєць у&nbsp;верші!
+        &mdash; аж&nbsp;скрикнула Хвеська.&mdash; Заєць у&nbsp;верші!
         І&nbsp;родилась, і&nbsp;хрестилась, такого не&nbsp;бачила.
         <br />
-        &mdash;&nbsp;То&nbsp;що, що&nbsp;не&nbsp;бачила? &mdash;&nbsp;каже
+        &mdash;&nbsp;То&nbsp;що, що&nbsp;не&nbsp;бачила? &mdash; каже
         Петро.&mdash; Не&nbsp;бачила, то&nbsp;побачиш! Ходім лиш додому,
         а&nbsp;то&nbsp;вже пізно.
       </>
@@ -641,7 +641,7 @@ const tale_3_ukr = {
         <br />
         &mdash;&nbsp;А&nbsp;де&nbsp;ж вони, чоловіче?
         <br />
-        &mdash;&nbsp;Та&nbsp;ось! &mdash;&nbsp;витяга ті&nbsp;гроші.
+        &mdash;&nbsp;Та&nbsp;ось! &mdash; витяга ті&nbsp;гроші.
         <br />
         &mdash;&nbsp;Отепер&nbsp;же, чоловіче, будемо ми&nbsp;багаті!
         <br />
@@ -649,7 +649,7 @@ const tale_3_ukr = {
         та&nbsp;не&nbsp;дуже, бо&nbsp;як&nbsp;економ довідається, то&nbsp;зараз
         одніме.
         <br />
-        &mdash;&nbsp;От! &mdash;&nbsp;казже жінка.&mdash; А&nbsp;як&nbsp;же він
+        &mdash;&nbsp;От! &mdash; казже жінка.&mdash; А&nbsp;як&nbsp;же він
         довідається? Щоб мені те&nbsp;та&nbsp;се&nbsp;&mdash; я&nbsp;нікому
         не&nbsp;скажу!
         <br />
@@ -673,9 +673,9 @@ const tale_3_ukr = {
       <>
         Ото вже надвечір чути галас, гомін на&nbsp;селі.
         <br />
-        &mdash;&nbsp;Чоловіче, що&nbsp;таке? &mdash;&nbsp;Хвеська питається.
+        &mdash;&nbsp;Чоловіче, що&nbsp;таке? &mdash; Хвеська питається.
         <br />
-        &mdash;&nbsp;От&nbsp;там! &mdash;&nbsp;каже.
+        &mdash;&nbsp;От&nbsp;там! &mdash; каже.
         <br />
         &mdash;&nbsp;То&nbsp;що-бо там таке? Я&nbsp;піду подивлюся!
         <br />
@@ -699,11 +699,11 @@ const tale_3_ukr = {
         й&nbsp;повірила, вже й&nbsp;кортить&nbsp;їй:
         <br />
         &mdash;&nbsp;Ох, лишенько! Побіжу я&nbsp;до&nbsp;куми Меланки
-        та&nbsp;розкажу! &mdash;&nbsp;скрикнула Хвеська та&nbsp;так
+        та&nbsp;розкажу! &mdash; скрикнула Хвеська та&nbsp;так
         і&nbsp;схопилася з&nbsp;місця.
         <br />
         &mdash;&nbsp;От&nbsp;не&nbsp;ходи краще та&nbsp;сиди дома!
-        &mdash;&nbsp;каже чоловік.&mdash; Хіба ти&nbsp;не&nbsp;знаєш нашого
+        &mdash; каже чоловік.&mdash; Хіба ти&nbsp;не&nbsp;знаєш нашого
         економа? Він як&nbsp;довідається, що&nbsp;ти&nbsp;про його таке
         розказувала, то&nbsp;й&nbsp;тебе й&nbsp;мене з&rsquo;їсть.
       </>
@@ -739,7 +739,7 @@ const tale_3_ukr = {
         <br />
         &mdash;&nbsp;Ну, та, може, бог дасть, скоро не&nbsp;будемо вбогі...
         <br />
-        &mdash;&nbsp;Як-то так? &mdash;&nbsp;питається кума Меланка, а&nbsp;саме
+        &mdash;&nbsp;Як-то так? &mdash; питається кума Меланка, а&nbsp;саме
         вже й&nbsp;вухо нашорошила.
         <br />
         &mdash;&nbsp;Ох, кумасю, не&nbsp;знаю, як&nbsp;і&nbsp;казать...
@@ -755,7 +755,7 @@ const tale_3_ukr = {
         казати!
         <br />
         &mdash;&nbsp;Ох, ненько! Та&nbsp;хіба&nbsp;ж я&nbsp;така?
-        Та&nbsp;я&nbsp;все одно, що&nbsp;стіна! &mdash;&nbsp;каже кума Меланка.
+        Та&nbsp;я&nbsp;все одно, що&nbsp;стіна! &mdash; каже кума Меланка.
         <br />
         &mdash;&nbsp;Ну, куманю,&nbsp;&mdash; каже Хвеська,&nbsp;&mdash;
         це&nbsp;вже я&nbsp;вам тільки та&nbsp;глядіть&nbsp;же&nbsp;&mdash;
@@ -809,8 +809,8 @@ const tale_3_ukr = {
         не&nbsp;сповна розуму, то&nbsp;вона чого й&nbsp;на&nbsp;світі нема
         наплете!
         <br />
-        &mdash;&nbsp;А&nbsp;так чи&nbsp;не&nbsp;так! &mdash;&nbsp;каже економ.
-        &mdash;&nbsp;Покликать сюди жінку!
+        &mdash;&nbsp;А&nbsp;так чи&nbsp;не&nbsp;так! &mdash; каже економ.
+        &mdash; Покликать сюди жінку!
       </>
     ),
     p29: (
@@ -831,13 +831,13 @@ const tale_3_ukr = {
     ),
     p30: (
       <>
-        &mdash;&nbsp;А&nbsp;коли се&nbsp;було? &mdash;&nbsp;питається економ.
+        &mdash;&nbsp;А&nbsp;коли се&nbsp;було? &mdash; питається економ.
         <br />
         &mdash;&nbsp;Еге! Коли! Саме тоді, як&nbsp;ліс притхнувся,
         ми&nbsp;ходили в&nbsp;ліс по&nbsp;рибу та&nbsp;під кожним кущем рибу
         збирали.
         <br />
-        &mdash;&nbsp;Що&nbsp;ще&nbsp;далі скажеш? &mdash;&nbsp;питається Петро.
+        &mdash;&nbsp;Що&nbsp;ще&nbsp;далі скажеш? &mdash; питається Петро.
         <br />
         &mdash;&nbsp;Еге! Що! Тепер уже не&nbsp;одбрешешся! Саме тоді
         й&nbsp;було, як&nbsp;ми&nbsp;рибу в&nbsp;лісі збирали, і&nbsp;бублейна
@@ -855,7 +855,7 @@ const tale_3_ukr = {
         милостивий пане, по&nbsp;селу водили...
         <br />
         &mdash;&nbsp;А&nbsp;чого мене водили по&nbsp;селу?
-        &mdash;&nbsp;питається економ.
+        &mdash; питається економ.
         <br />
         &mdash;&nbsp;Коли&nbsp;ж... вибачайте, пане... Уже коли питаєтесь,
         то&nbsp;казатиму. Тоді саме, як&nbsp;вас били ковбасами,
