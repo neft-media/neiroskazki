@@ -25,6 +25,9 @@ import dagCover from "./images/books/dagestancy-cover.jpg";
 import azShape from "./images/books/az-shape.svg";
 import azCover from "./images/books/az-cover.jpg";
 
+import uzbShape from "./images/books/uzb-shape.svg";
+import uzbCover from "./images/books/uzb-cover.jpg";
+
 const booksList = [
   {
     id: 1,
@@ -123,6 +126,17 @@ const booksList = [
     styles: {
       background: "linear-gradient(0deg, #A72F2F -2.21%, #FF7474 100.6%)",
       boxShadow: "0px 17px 12px -10px rgba(140, 91, 91, 0.80)"
+    },
+  },
+  {
+    id: 10,
+    nation: "Узбеки",
+    link: "/tales/uzb",
+    pattern: uzbShape,
+    cover: uzbCover,
+    styles: {
+      background: "linear-gradient(0deg, #A7852F -2.21%, #FFA674 100.6%)",
+      boxShadow: "0px 17px 12px -10px rgba(140, 132, 91, 0.80)"
     },
   },
 ]

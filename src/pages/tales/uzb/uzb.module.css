@@ -1,0 +1,23 @@
+.clr_1 {
+  background: linear-gradient(90deg, #452215 -0.03%, #BA5B38 78.68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: linear-gradient(90deg, #452215 -0.03%, #BA5B38 78.68%) 2;
+}
+
+.clr_2 {
+  background: linear-gradient(91deg, #006FB9 0%, #0E2B3F 119.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: linear-gradient(91deg, #006FB9 0%, #0E2B3F 119.06%) 2;
+}
+
+.clr_3 {
+  background: linear-gradient(90deg, #349578 0.03%, #00710B 90.56%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: linear-gradient(90deg, #349578 0.03%, #00710B 90.56%) 2;
+}
